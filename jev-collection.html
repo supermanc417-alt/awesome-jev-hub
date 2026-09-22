@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jev 生态全景 · 51 个把「判断」交给小模型的项目</title>
+<title>Jev 生态收藏篇：51 个项目，哪些值得玩、哪些看热闹</title>
 <style>
 :root{--bg:#0b0d12;--panel:#14171f;--card:#27272A;--line:#3F3F46;--line2:#2a2f3a;
 --text:#e6e9ef;--mut:#9aa3b2;--mut2:#71717A;--wht:#fff;--org:#F97316;--acc:#5E6AD2;}
@@ -64,9 +64,9 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </head><body>
 <div class="hero"><div class="in">
 <div class="kicker">AI经纬线 · 工具收藏篇</div>
-<h1>Jev 爆火：51 个把「判断」交给小模型的项目，一篇收藏齐了</h1>
-<p class="lede">Jev 是 TypeSafe AI 的「System One」模型，主打 <b>fast / cheap / typed judgments</b>——它几乎从不直接生成内容，只负责「判断与路由」。这篇把社区里 51 个基于它的实战项目（含首批 21 个 + 生态扩张 30 个）按用途整理成可检索的干货档案，配官方截图，建议收藏。</p>
-<div class="src">2026-09-21 首发 · 数据于 2026-09-22 经 GitHub API 实测刷新</div>
+<h1>Jev 几天就爆火了：我们把 51 个项目全扒了一遍，哪些值得玩、哪些看热闹，都帮你分好了</h1>
+<p class="lede">这几天 AI 圈最火的是 <b>Jev</b>——TypeSafe AI 出的小模型，只干一件事：<b>做判断</b>。火到什么程度？短短几天，GitHub 上基于它的项目冒出来 50 多个，加起来 80,428★。这篇把能找到的项目全翻了一遍：哪些值得你上手试，哪些看看别人玩就行，全分好了。跟得上的可以上手玩，跟不上的看别人玩也挺好——反正先收藏着再说。</p>
+<div class="src">数据于 2026-09-22 经 GitHub API 逐仓实测 · Star / 语言 / 协议均为当日快照</div>
 <div class="statrow">
 <div class="stat"><div class="n">51</div><div class="l">真实在跑的应用项目</div></div>
 <div class="stat"><div class="n">80,428★</div><div class="l">51 应用 + 10 清单 累计 Star</div></div>
@@ -77,21 +77,21 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 
 
 <section>
-<h2>一、先搞懂：Jev 到底是什么</h2>
-<p class="sub">一句话——它是「判断层」原语，不是「生成层」模型。理解了这一点，下面 51 个项目就全串起来了。</p>
+<h2>一、Jev 是什么？说人话</h2>
+<p class="sub">先记住一句话：它不是用来「写东西」的，是用来「做决定」的。理解了这个，下面 51 个项目就全串起来了。</p>
 <div class="concept">
-<div class="cc"><span class="tag">本质</span><h3>TypeSafe 的 System One 模型</h3><p>官方 slogan 是 <b>"i. am. speed."</b>。核心 API 原语只有三个：<b>Choice</b>（选）、<b>Score</b>（打分）、<b>Noul</b>（无意义/跳过）。输出带类型、可工程化，不像大模型那样吐自由文本。</p></div>
-<div class="cc"><span class="tag">架构角色</span><h3>廉价低延迟的「判断路由层」</h3><p>大模型负责「生成」，Jev 负责「判断与路由」。代价从「每次都调贵模型」降为「只在必要时调」。它观察状态→下判断→把执行交给大模型或底层系统。</p></div>
-<div class="cc"><span class="tag">为什么爆</span><h3>便宜 + 够快 + 好接</h3><p>① 便宜到可以每步都调；② 延迟低到能做<b>实时决策</b>（游戏/交易/无人机）；③ 带类型输出，工程好接；④ Agent 长上下文的「瘦身刚需」让它迅速成为标配。</p></div>
-<div class="cc"><span class="tag">怎么上手</span><h3>三步进生态</h3><div class="quick" style="margin-top:0;padding:0;background:none;border:none;"><ol>
-<li>去 <b>typesafe.ai</b> 拿 Jev API Key；</li>
-<li>用 <b>typesafe-mcp</b> 或 <b>jev-mcp</b> 接进 Claude Code / Codex / 任意 MCP 客户端；</li>
-<li>从 <b>fast-jev-compaction</b> / <b>Winnow</b> 体验上下文瘦身，立刻见效。</li>
+<div class="cc"><span class="tag">它是什么</span><h3>一个只会做判断的小模型</h3><p>TypeSafe AI 出品，官方口号很直白：<b>"i. am. speed."</b>（我，很快）。它不帮你写文章、写代码，只会三件事：从几个选项里挑一个（<b>Choice</b>）、给个东西打分（<b>Score</b>）、觉得没必要就跳过（<b>Noul</b>）。</p></div>
+<div class="cc"><span class="tag">它在系统里干嘛</span><h3>站在门口做决定的</h3><p>打个比方：大模型是干活的人，Jev 是站在门口做决定的。遇到事先问它一句：这事要不要叫大模型？该点哪个按钮？A 和 B 选哪个？它答得又快又便宜，大部分事根本轮不到大模型出手——成本就是这么省下来的。</p></div>
+<div class="cc"><span class="tag">为什么几天就爆火</span><h3>快、便宜、好接</h3><p>① 便宜到每一步都可以问它一句；② 快到 <b>81 毫秒</b>出一次判断，交易、游戏这种实时的事也敢用；③ 输出带格式，程序员接起来不费劲；④ 做 Agent 的人最头疼「上下文太长、调用太贵」，它正好对症。</p></div>
+<div class="cc"><span class="tag">想上手</span><h3>三步就够</h3><div class="quick" style="margin-top:0;padding:0;background:none;border:none;"><ol>
+<li>去 <b>typesafe.ai</b> 拿个 API Key；</li>
+<li>用 <b>typesafe-mcp</b> 或 <b>jev-mcp</b> 接进 Claude Code / Codex；</li>
+<li>先拿 <b>fast-jev-compaction</b> 或 <b>Winnow</b> 体验「上下文瘦身」，立刻有感。</li>
 </ol></div></div>
 </div>
 </section>
 
-<section><h2>二、重点详解 · 6 张资料卡</h2><p class="sub">按 Star 数挑选的代表项目，含「怎么用」与「注意」。</p>
+<section><h2>二、先说结论：哪些值得重点关注，哪些看别人玩就行</h2><p class="sub">我们把 GitHub 上能找到的 Jev 项目全翻了一遍，留下 51 个真实在跑的（每个都验过仓库，Star 实测），按用途分成 12 类。51 个不用都看——先看这 6 个。</p>
 
 <div class="feat"><div class="cols2">
 <div class="shot" style="border-radius:12px;"><img src="screenshots/vercel-labs__json-render.png" alt="json-render"><div class="cap"><span>vercel-labs/json-render</span><span class="s">17,997★</span></div></div>
@@ -176,13 +176,23 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="go">→ <a href="https://github.com/devagrawal09/jev-review" target="_blank" rel="noopener">github.com/devagrawal09/jev-review</a></div>
 </div></div></div>
 
+
+<div class="quick" style="margin-top:26px;">
+<b style="color:var(--org);font-size:15px;">适合看别人玩的（demo 向，别当真）</b>
+<p style="margin:8px 0 0;color:var(--mut);font-size:13.5px;">这些项目证明了 Jev 能干什么，但离「有用」还差点意思——看热闹、找灵感正好：</p>
+<ol>
+<li><b>typesafe-mario</b>（341★）— Jev 玩超级马里奥：不看画面，直接读游戏内存做决策。</li><li><b>jev-drone</b>（122★）— 拿 Jev 开无人机（仿真环境）：飞控保底，Jev 只做爬升、刹车这类决定。</li><li><b>OneVOneJev</b>（20★）— 浏览器里 1v1 射击，Jev 每一帧都在做判断，纯 demo。</li><li><b>minecraft-agent</b>（491★）— Jev 玩 Minecraft，路线预先录制校验，看个思路。</li><li><b>jev-trader</b>（1,915★）— 81ms 高频交易，看着很帅——但只在测试网跑，别当真。</li><li><b>killmyidea</b>（80★）— 把创业点子丢进去，让它打分决定 KILL 还是 SHIP，图一乐。</li><li><b>jev-experiments</b>（362★）— 10 个小 demo 合集，找灵感专用。</li>
+</ol>
+<p style="margin:10px 0 0;color:var(--mut);font-size:13.5px;">一句话总结：<b style="color:var(--text);">真正能用起来的，集中在「省钱」和「提速」两类</b>——上下文瘦身、路由分流、缓存复用；游戏和交易这些，先看别人玩。</p>
+</div>
+
 </section>
 <section><h2>三、全景资料卡 · 51 个项目（统一 12 类）</h2><p class="sub">按用途合并首批 21 个与生态扩张 30 个，Star 数为 GitHub API 实测刷新（2026-09-22）。带 <span class="hl">NEW</span> 标记为 2026-09-22 新增的 30 个扩张项目。</p>
 <h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">浏览器 / 桌面自动化（4）</h3>
 <div class="grid">
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">浏览器 / 桌面自动化</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">浏览器 / 桌面自动化</span></div>
 <h3>jev-ultrafast</h3>
 <div class="desc">Browser Use 做的高速浏览器 Agent。Jev 每步只判断「做什么、点哪个元素」，要打字才调小模型。Google Flights 搜一次航班约 7 秒。</div>
 <div class="stats">16,795 <span>Stars</span>　·　Python　·　MIT</div>
@@ -193,7 +203,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">浏览器 / 桌面自动化</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">浏览器 / 桌面自动化</span></div>
 <h3>agent-desktop</h3>
 <div class="desc">桌面自动化。读系统无障碍树，判断下一步该点哪个按钮、菜单或输入框。</div>
 <div class="stats">1,451 <span>Stars</span>　·　Rust　·　Apache-2.0</div>
@@ -229,7 +239,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="grid">
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">代码 / 上下文管理</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">代码 / 上下文管理</span></div>
 <h3>fast-jev-compaction</h3>
 <div class="desc">给 Claude Code 做上下文压缩。每次工具调用先让 Jev 判断还有没有用，没用的删掉，留下来的原文不重写。</div>
 <div class="stats">6,097 <span>Stars</span>　·　TypeScript　·　MIT</div>
@@ -262,7 +272,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">代码 / 上下文管理</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">代码 / 上下文管理</span></div>
 <h3>jev-review</h3>
 <div class="desc">代码审查前先过一遍 Jev，把高风险改动挑出来，再交给更贵的大模型或人。带本地看板。</div>
 <div class="stats">511 <span>Stars</span>　·　TypeScript　·　MIT</div>
@@ -298,7 +308,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="grid">
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">集成 / 工具箱 (MCP & CLI)</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">集成 / 工具箱 (MCP & CLI)</span></div>
 <h3>typesafe-mcp</h3>
 <div class="desc">把 Jev 接进 Claude Code、Claude Desktop、Codex 和 Pi，随时做 Choice / Score / Noul。</div>
 <div class="stats">235 <span>Stars</span>　·　Go　·　MIT</div>
@@ -309,7 +319,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">集成 / 工具箱 (MCP & CLI)</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">集成 / 工具箱 (MCP & CLI)</span></div>
 <h3>jev-mcp</h3>
 <div class="desc">现成的 Agent 判断工具箱：事实核验、内容筛查、语义排序、分类和信息提取。</div>
 <div class="stats">255 <span>Stars</span>　·　JavaScript　·　MIT</div>
@@ -331,7 +341,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">集成 / 工具箱 (MCP & CLI)</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">集成 / 工具箱 (MCP & CLI)</span></div>
 <h3>jevcache</h3>
 <div class="desc">OpenAI 兼容代理。用 Jev 判断意图是否与上次相同，命中就复用缓存、未命中才调用并缓存。</div>
 <div class="stats">9 <span>Stars</span>　·　TypeScript　·　MIT</div>
@@ -381,7 +391,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="grid">
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">生成式 UI</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">生成式 UI</span></div>
 <h3>json-render</h3>
 <div class="desc">Vercel Labs 的生成式 UI 框架。Jev 不逐 token 写 JSON，只负责选组件、属性和布局。</div>
 <div class="stats">17,997 <span>Stars</span>　·　TypeScript　·　Apache-2.0</div>
@@ -450,7 +460,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab new">NEW · 扩展</span><span class="cat">Agent 框架 / Harness</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab new">NEW · 扩展</span><span style="color:var(--mut2);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid var(--line);">看别人玩</span><span class="cat">Agent 框架 / Harness</span></div>
 <h3>jev-experiments</h3>
 <div class="desc">10 个 Jev 延迟向 demo 合集（commit-sentry、inbox-blitz、jev-dispatch 等），每个带 README + 截图。</div>
 <div class="stats">362 <span>Stars</span>　·　TypeScript　·　未声明</div>
@@ -500,7 +510,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="grid">
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab new">NEW · 扩展</span><span class="cat">开源复刻 / 兼容 Runtime</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab new">NEW · 扩展</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">开源复刻 / 兼容 Runtime</span></div>
 <h3>kev</h3>
 <div class="desc">Jev-like 决策模型家族，基于 Qwen3.5 自己训练、本地可跑。证明「小模型做带类型的判断」不依赖 Jev 一家。</div>
 <div class="stats">2,799 <span>Stars</span>　·　Python　·　Apache-2.0</div>
@@ -580,7 +590,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="grid">
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">交易 / 金融</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">交易 / 金融</span></div>
 <h3>jev-trader</h3>
 <div class="desc">Monad 测试网上做高频做市。Jev 根据价差和成交方向判断下一步买还是卖，模型延迟约 81ms。</div>
 <div class="stats">1,915 <span>Stars</span>　·　TypeScript　·　MIT</div>
@@ -602,7 +612,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab new">NEW · 扩展</span><span class="cat">交易 / 金融</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab new">NEW · 扩展</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">交易 / 金融</span></div>
 <h3>QuantDinger</h3>
 <div class="desc">开源 AI 交易操作系统。把 Jev 接进策略研究、回测与下单，覆盖加密货币 / 股票 / 外汇，自带多租户 SaaS 骨架。</div>
 <div class="stats">11,970 <span>Stars</span>　·　Python　·　Apache-2.0</div>
@@ -616,7 +626,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="grid">
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">游戏 / 机器人 / 移动</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="color:var(--mut2);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid var(--line);">看别人玩</span><span class="cat">游戏 / 机器人 / 移动</span></div>
 <h3>typesafe-mario</h3>
 <div class="desc">让 Jev 玩《超级马里奥》。不看截图，直接读模拟器 RAM 里的结构化状态，再决定跑、跳、躲。</div>
 <div class="stats">341 <span>Stars</span>　·　Python　·　未声明</div>
@@ -627,7 +637,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">游戏 / 机器人 / 移动</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="color:var(--mut2);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid var(--line);">看别人玩</span><span class="cat">游戏 / 机器人 / 移动</span></div>
 <h3>jev-drone</h3>
 <div class="desc">拿 Jev 控无人机。底层飞控继续负责稳定和安全，Jev 只做爬升、刹车、穿越障碍这类上层判断。</div>
 <div class="stats">122 <span>Stars</span>　·　Python　·　MIT</div>
@@ -638,7 +648,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">游戏 / 机器人 / 移动</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="color:var(--mut2);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid var(--line);">看别人玩</span><span class="cat">游戏 / 机器人 / 移动</span></div>
 <h3>OneVOneJev</h3>
 <div class="desc">浏览器里的 1v1 FPS。每个决策 tick 都要判断走位、视角、瞄准、开火和跳跃。</div>
 <div class="stats">20 <span>Stars</span>　·　TypeScript　·　未声明</div>
@@ -649,7 +659,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab new">NEW · 扩展</span><span class="cat">游戏 / 机器人 / 移动</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab new">NEW · 扩展</span><span style="color:var(--mut2);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid var(--line);">看别人玩</span><span class="cat">游戏 / 机器人 / 移动</span></div>
 <h3>minecraft-agent</h3>
 <div class="desc">Minecraft 智能体：Astra 规划器 + JEV 控制器，带原生录制、已测路线与运行校验。</div>
 <div class="stats">491 <span>Stars</span>　·　JavaScript　·　未声明</div>
@@ -729,7 +739,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab new">NEW · 扩展</span><span class="cat">搜索 / 数据 / 行业应用</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab new">NEW · 扩展</span><span style="background:rgba(249,115,22,.15);color:var(--org);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid rgba(249,115,22,.4);">重点关注</span><span class="cat">搜索 / 数据 / 行业应用</span></div>
 <h3>jev-chat-jarvis</h3>
 <div class="desc">装在手机上的「对话副驾」：在微信 / QQ / X / 飞书里读懂对方，给候选回复、一键填入，发不发由你。</div>
 <div class="stats">2,034 <span>Stars</span>　·　Kotlin　·　MIT</div>
@@ -765,7 +775,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="grid">
 
 <div class="ncard">
-<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">产品 / 创业</span></div>
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span style="color:var(--mut2);font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid var(--line);">看别人玩</span><span class="cat">产品 / 创业</span></div>
 <h3>killmyidea</h3>
 <div class="desc">输入一个创业点子，Jev 从多个维度打分，最后给你 KILL、FIX 或 SHIP。</div>
 <div class="stats">80 <span>Stars</span>　·　TypeScript　·　未声明</div>
@@ -821,7 +831,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <a class="shot" href="https://github.com/jexp/neo4jev" target="_blank" rel="noopener"><img loading="lazy" src="screenshots/jexp__neo4jev.png" alt="neo4jev"><div class="cap"><span>neo4jev</span><span class="s">84★</span></div></a>
 <a class="shot" href="https://github.com/monteduro/killmyidea" target="_blank" rel="noopener"><img loading="lazy" src="screenshots/monteduro__killmyidea.png" alt="killmyidea"><div class="cap"><span>killmyidea</span><span class="s">80★</span></div></a>
 <a class="shot" href="https://github.com/irfndi/prism-liquidity-agent" target="_blank" rel="noopener"><img loading="lazy" src="screenshots/irfndi__prism-liquidity-agent.png" alt="prism-liquidity-agent"><div class="cap"><span>prism-liquidity-agent</span><span class="s">71★</span></div></a>
-<a class="shot" href="https://github.com/GhalebDweikat/winnow" target="_blank" rel="noopener"><img loading="lazy" src="screenshots/GhalebDweikat__winnow.png" alt="winnow"><div class="cap"><span>winnow</span><span class="s">60★</span></div></a>
+<a class="shot" href="https://github.com/GhalebDweikat/winnow" target="_blank" rel="noopener"><img loading="lazy" src="screenshots/GhalebDweikat__Winnow.png" alt="winnow"><div class="cap"><span>winnow</span><span class="s">60★</span></div></a>
 <a class="shot" href="https://github.com/ellipsis-dev/blink" target="_blank" rel="noopener"><img loading="lazy" src="screenshots/ellipsis-dev__blink.png" alt="blink"><div class="cap"><span>blink</span><span class="s">56★</span></div></a>
 <a class="shot" href="https://github.com/sharziki/semdecide" target="_blank" rel="noopener"><img loading="lazy" src="screenshots/sharziki__semdecide.png" alt="semdecide"><div class="cap"><span>semdecide</span><span class="s">32★</span></div></a>
 <a class="shot" href="https://github.com/qkal/Canny" target="_blank" rel="noopener"><img loading="lazy" src="screenshots/qkal__Canny.png" alt="Canny"><div class="cap"><span>Canny</span><span class="s">31★</span></div></a>
@@ -831,8 +841,8 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div></section>
 
 <section>
-<h2>五、社区精选清单 · 10 个导航站</h2>
-<p class="sub">想跟进生态全貌、找客户端/SDK/框架，直接逛这几个社区清单。按 Star 排序，均为 GitHub 仓库。注意：多个作者各自维护了同名 <code>awesome-jev</code> 清单，属生态碎片化，按需取用即可。</p>
+<h2>五、Jev 的社区生态 · 10 个导航站</h2>
+<p class="sub">Jev 火起来之后，社区一口气冒出 10 个精选清单（好几个还重名）。想跟进生态全貌、找客户端 / SDK / 框架，逛这几个就够了。按 Star 排序，均为 GitHub 仓库。</p>
 <div class="grid">
 
 
@@ -917,5 +927,6 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 </div></section>
 
-<p class="note">说明：51 个应用仓库 + 10 个社区清单均经 GitHub API 实测存在（2026-09-22 刷新），Star / 语言 / 协议为实时数据；中文功能描述来自社区清单上下文，未做改写。Jev 即 TypeSafe AI 的 System One 模型（官方 slogan "i. am. speed."），相关能力以官方 docs 为准。截图因渲染限流个别缺失不影响档案完整性。如需转成公众号图文或腾讯文档，可在此基础上二次编排。</p>
+<p class="note">说明：51 个应用仓库 + 10 个社区清单均经 GitHub API 实测存在（2026-09-22），Star / 语言 / 协议为当日快照；中文描述基于各仓库官方说明与社区清单整理，未做改写。Jev 是 TypeSafe AI 的 System One 模型，能力以官方文档为准。</p>
+<p class="note" style="border-top:none;margin-top:0;padding-top:4px;">这篇会持续更新：Star 数据定期刷新，新项目继续收录。用得上就先收藏；跟不上生态节奏也没关系，看别人玩也挺好。</p>
 </body></html>
