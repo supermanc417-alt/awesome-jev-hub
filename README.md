@@ -156,9 +156,9 @@ Jev 是 [TypeSafe AI](https://typesafe.ai) 的「System One」模型，定位 **
 
 ## 文档与数据
 
-- **`jev-collection.html`** — 完整可视化收藏篇：概念卡 + 6 张重点详解资料卡 + 51 张全景资料卡（含官方截图画廊）。
+- **`jev-collection.html`** — 完整可视化收藏篇：概念卡 + 6 张重点详解资料卡 + 51 张全景资料卡（含官方截图画廊，引用 `screenshots/`）。
 - **`data/jev_data.json`** / **`data/jev_data2.json`** — 各项目 GitHub 实测元数据（Star / 语言 / 协议 / topics / 时间）。
-- **`screenshots/`** — 51 个仓库的 GitHub 实拍截图（无头 Chrome 直截，本地化）。
+- **`screenshots/`** — 51 个仓库的 GitHub 实拍截图（无头 Chrome 直截，本地化），被 `jev-collection.html` 的画廊引用；开启 GitHub Pages 后可直接在线预览。
 
 ## 数据来源
 
