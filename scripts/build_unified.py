@@ -12,17 +12,17 @@ def stars(n): return f"{n:,}"
 
 # ---- 统一 12 类（21 batch1 + 30 batch2 = 51 应用）----
 CAT = {
- "浏览器 / 桌面自动化": ["browser-use/jev-ultrafast","lahfir/agent-desktop","wy-coliney/jev-browser-use","milind-soni/tiptour-macos"],
+ "浏览器 / 桌面自动化": ["browser-use/jev-ultrafast","lahfir/agent-desktop","wy-coliney/jev-browser-use","milind-soni/tiptour-macos","tinyhumansai/tinycomputer"],
  "代码 / 上下文管理": ["tamaratran/fast-jev-compaction","0xNatoshi/jev-codex-router","GhalebDweikat/Winnow","devagrawal09/jev-review","ellipsis-dev/blink","qkal/Canny"],
- "集成 / 工具箱 (MCP & CLI)": ["itsmostafa/typesafe-mcp","jkudish/jev-mcp","sharziki/semdecide","kushals256/jevcache"],
+ "集成 / 工具箱 (MCP & CLI)": ["itsmostafa/typesafe-mcp","jkudish/jev-mcp","sharziki/semdecide","kushals256/jevcache","RileyCarney/JevTools"],
  "路由 / 技能 / Agent 调度": ["gargpratyush/jev-router","kerpopule/hermes-jev-skills","wuyoscar/jev-skill"],
  "生成式 UI": ["vercel-labs/json-render"],
  "Agent 框架 / Harness": ["dealerdefi/Jevmind","HarnessRouter/SystemOneHarness","thruwire/foreman","pulseaiclub/phi","notque/vexjoy-agent","dabit3/jev-experiments"],
  "记忆层 / 运行时感知": ["Asymptote-Labs/agent-beacon","kitfunso/hippo-memory","reticlehq/reticle"],
  "开源复刻 / 兼容 Runtime": ["jaredpalmer/kev","TianyuCodings/NanoJev","wfzyx/von","razorback16/openjev","ekzhang/openjev-sglang","Rizzo-AI-Academy/rizzo-flow","featherless-ai/simple-jev"],
- "交易 / 金融": ["jarrodwatts/jev-trader","irfndi/prism-liquidity-agent","OpenByteInc/QuantDinger"],
- "游戏 / 机器人 / 移动": ["fhshaik/typesafe-mario","RomanSlack/jev-drone","emrickgarrett/OneVOneJev","rmalde/minecraft-agent","droidrun/mobile-jev"],
- "搜索 / 数据 / 行业应用": ["jexp/neo4jev","AkashPriyadarshii/jev-curate","superagents-lab/jev-search","realZachi/pg-jev","kyotofin/tax-doc-classifier","jev-chat/jev-chat-jarvis","samuelfaj/distill","sutro-sh/jev-align"],
+ "交易 / 金融": ["jarrodwatts/jev-trader","irfndi/prism-liquidity-agent","OpenByteInc/QuantDinger","MojoAI-King/jev-paper-trader","initial-d/ml-quant-trading"],
+ "游戏 / 机器人 / 移动": ["fhshaik/typesafe-mario","RomanSlack/jev-drone","emrickgarrett/OneVOneJev","rmalde/minecraft-agent","droidrun/mobile-jev","mrubens/jevcraft"],
+ "搜索 / 数据 / 行业应用": ["jexp/neo4jev","AkashPriyadarshii/jev-curate","superagents-lab/jev-search","realZachi/pg-jev","kyotofin/tax-doc-classifier","jev-chat/jev-chat-jarvis","samuelfaj/distill","sutro-sh/jev-align","fstandhartinger/model-market-comparison","chenrui333/jev-docs"],
  "产品 / 创业": ["monteduro/killmyidea"],
 }
 EXPANSION = {
@@ -90,6 +90,15 @@ CN.update({
  "droidrun/mobile-jev":"移动端 Agent：把 Jev 的判断层搬进 Android / iOS 自动化，决定下一步点哪。",
  "milind-soni/tiptour-macos":"开源的本地电脑操控，macOS 上快速、本地化的 computer use，Jev 判断下一步操作。",
 })
+CN.update({
+ "RileyCarney/JevTools":"一组给 Jev 开发用的轻量工具与脚本合集，把脚手架、调试、调用封装等常见杂活打包好，少写样板、专注判断逻辑本身。",
+ "mrubens/jevcraft":"用 Jev 驱动的 Minecraft 机器人。把游戏状态喂给 Jev，由它判断下一步采矿、建造还是移动，演示「决策模型控游戏」的玩法。",
+ "MojoAI-King/jev-paper-trader":"用虚拟 10 万美金在 Polymarket、Kalshi 真实市场做模拟交易，验证「Jev 研究 + Claude 分析」能不能跑赢市场。全程 paper trade，不涉及真实资金。",
+ "fstandhartinger/model-market-comparison":"「Benchmark Heaven」：汇总 AI 模型基准（含来源与建模成本），并维护 JevBench / ImageJevBench 决策模型排行榜，方便横向对比各决策模型的性价比。",
+ "tinyhumansai/tinycomputer":"基于决策模型（JEV）的桌面 + 浏览器自动化 harness，用 Rust 写成。Jev 负责「下一步点哪、做什么」，底层走无障碍树，本地优先、开源。",
+ "initial-d/ml-quant-trading":"PyTorch 量化研究框架：213 个因子、偏置校正、组合优化与回测，关键决策点用 System-One / Jev 式判断。覆盖 A 股，可复现。",
+ "chenrui333/jev-docs":"社区维护的 Jev / TypeSafe System One 编年史：API、SDK、Agent 实践与工程最佳实践的演进记录，当上手参考书翻。",
+})
 HOW = {
  "browser-use/jev-ultrafast":"pip 安装后当普通 browser-use Agent 用，Jev 自动接管元素决策；把「开网页→点按钮→取结果」的流程自动化。",
  "tamaratran/fast-jev-compaction":"作为 Claude Code 插件接入，长会话自动瘦身，无需改现有 workflow。",
@@ -145,6 +154,15 @@ HOW.update({
  "droidrun/mobile-jev":"接移动自动化框架，Jev 选动作；UI 结构来自无障碍树。",
  "milind-soni/tiptour-macos":"macOS 本地运行，给目标 App 发指令，Jev 选动作。",
 })
+HOW.update({
+ "RileyCarney/JevTools":"git clone 后按需挑脚本用，或当模板抄进自己的 Jev 开发流程；偏工具箱，按需取用。",
+ "mrubens/jevcraft":"按 README 起本地 Minecraft 环境跑 demo，观察 Jev 怎么在游戏循环里做决策。",
+ "MojoAI-King/jev-paper-trader":"git clone 跑内置示例，看 Jev 的出价 / 研究判断如何与 Claude 的论证配合；仅模拟盘，不涉及真实资金。",
+ "fstandhartinger/model-market-comparison":"打开在线榜单或直接跑仓库脚本，按任务维度查决策模型的延迟 / 成本 / 准确率排行。",
+ "tinyhumansai/tinycomputer":"Rust 二进制本地运行，把目标 App / 网页交给它，Jev 做动作决策；适合做本地电脑 / 浏览器自动化的底座。",
+ "initial-d/ml-quant-trading":"git clone 跑示例 notebook，看因子研究与组合决策怎么接 Jev 式判断；先回测验证再上实盘。",
+ "chenrui333/jev-docs":"当文档站 / 参考库用，查 Jev API 与 SDK 的来龙去脉和踩坑经验；想深入原理时翻。",
+})
 NOTE = {
  "vercel-labs/json-render":"和「让模型直接写 UI」的路线相反，json-render 把生成权留在框架侧，Jev 只做结构化选择， hallucination 面更小。",
  "browser-use/jev-ultrafast":"7 秒搜一次航班的成绩来自官方 benchmark，真实网页的 anti-bot / 登录环节仍是变量，生产前先小流量验证。",
@@ -173,7 +191,8 @@ FEATURED = ["vercel-labs/json-render","browser-use/jev-ultrafast","tamaratran/fa
 
 META = ["yibie/awesome-jev","Anil-matcha/awesome-jev-by-typesafe","v-modal/awesome-jev-tools",
         "AbdelStark/awesome-typesafe-jev","logicrw/awesome-jev-projects","cobanov/awesome-jev",
-        "heyjunpenn/awesome-jev","AnotiaWang/awesome-jev","kraayenjon/awesome-jev","robokrunch/awesome-jev"]
+        "heyjunpenn/awesome-jev","AnotiaWang/awesome-jev","kraayenjon/awesome-jev","robokrunch/awesome-jev",
+        "AppitStudio/awesome-jev"]
 META_CN = {
  "yibie/awesome-jev":"社区维护的 Jev 公开项目 / 集成 / 讨论总清单，按 Infra·SDK·集成分类，含大量客户端与框架链接。",
  "Anil-matcha/awesome-jev-by-typesafe":"有证据支撑的用例、模式、提示词与起步代码，偏「怎么把 Jev 用对」。",
@@ -185,6 +204,7 @@ META_CN = {
  "AnotiaWang/awesome-jev":"精选的 Jev / TypeSafe System One 应用、库与资源。",
  "kraayenjon/awesome-jev":"Jev 用例、项目、SDK 与资源清单（含 madewithjev 上的游戏 demo）。",
  "robokrunch/awesome-jev":"由 RoboKrunch 维护，含真实延迟/账单实测标注。",
+ "AppitStudio/awesome-jev":"社区维护的 Jev 资源清单，精选 typed AI 决策的可运行示例，偏「拿来就能跑」的实战导向。",
 }
 
 def get(full):  # 返回数据集中的 dict

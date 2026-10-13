@@ -169,17 +169,6 @@ Jev 是 [TypeSafe AI](https://typesafe.ai) 的「System One」模型，定位 **
 ## 近期新发现
 
 _由每周自动更新脚本（`scripts/update_jev_hub.py`）经 GitHub API 实测发现，尚未做中文精排。如发现已归档或失效，欢迎提 issue / PR。_
-
-- [AppitStudio/awesome-jev](https://github.com/AppitStudio/awesome-jev) *(⭐ 102)* — Curated Jev resources and runnable examples for typed AI decisions.
-- [initial-d/ml-quant-trading](https://github.com/initial-d/ml-quant-trading) *(⭐ 91)* — PyTorch ML quant research: 213 factors, bias correction, portfolio optimization, backtesting, and System-One/Jev-style decisions.
-- [fstandhartinger/model-market-comparison](https://github.com/fstandhartinger/model-market-comparison) *(⭐ 20)* — Benchmark Heaven: AI model benchmarks with sources and modeled costs, plus the JevBench and ImageJevBench decision model leaderboards.
-- [tinyhumansai/tinycomputer](https://github.com/tinyhumansai/tinycomputer) *(⭐ 6)* — Decision model (JEV) based harness to perform Desktop & Browser automation. Written in Rust. 
-- [chenrui333/jev-docs](https://github.com/chenrui333/jev-docs) *(⭐ 6)* — Community-maintained history of Jev / TypeSafe System One APIs, SDKs, agent guidance, and engineering best practices.
-- [RileyCarney/JevTools](https://github.com/RileyCarney/JevTools) *(⭐ 4)* — A lightweight collection of developer utilities and scripts designed to streamline Jev development process.
-- [mrubens/jevcraft](https://github.com/mrubens/jevcraft) *(⭐ 3)* — Jev-powered Minecraft bot
-- [MojoAI-King/jev-paper-trader](https://github.com/MojoAI-King/jev-paper-trader) *(⭐ 3)* — Paper trading real Polymarket and Kalshi markets with a fake $100k: can Jev + Claude research beat the market?
-
-_另有 20 个低置信候选在 `data/candidates.json` 待人工复核。_
 <!-- NEW_DISCOVERIES_END -->
 
 ## Contributing

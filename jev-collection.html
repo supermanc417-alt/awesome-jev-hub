@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jev 生态全景 · 51 个把「判断」交给小模型的项目</title>
+<title>Jev 生态全景 · 58 个把「判断」交给小模型的项目</title>
 <style>
 :root{--bg:#0b0d12;--panel:#14171f;--card:#27272A;--line:#3F3F46;--line2:#2a2f3a;
 --text:#e6e9ef;--mut:#9aa3b2;--mut2:#71717A;--wht:#fff;--org:#F97316;--acc:#5E6AD2;}
@@ -64,12 +64,12 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </head><body>
 <div class="hero"><div class="in">
 <div class="kicker">AI经纬线 · 工具收藏篇</div>
-<h1>Jev 爆火：51 个把「判断」交给小模型的项目，一篇收藏齐了</h1>
-<p class="lede">Jev 是 TypeSafe AI 的「System One」模型，主打 <b>fast / cheap / typed judgments</b>——它几乎从不直接生成内容，只负责「判断与路由」。这篇把社区里 51 个基于它的实战项目（含首批 21 个 + 生态扩张 30 个）按用途整理成可检索的干货档案，配官方截图，建议收藏。</p>
+<h1>Jev 爆火：58 个把「判断」交给小模型的项目，一篇收藏齐了</h1>
+<p class="lede">Jev 是 TypeSafe AI 的「System One」模型，主打 <b>fast / cheap / typed judgments</b>——它几乎从不直接生成内容，只负责「判断与路由」。这篇把社区里 58 个基于它的实战项目（含首批 21 个 + 生态扩张 30 个）按用途整理成可检索的干货档案，配官方截图，建议收藏。</p>
 <div class="src">整理自 X 推文 · <b>@Pluvio9yte（雪踏乌云）</b> · 2026-09-21 首发 · 数据于 2026-09-22 经 GitHub API 实测刷新</div>
 <div class="statrow">
-<div class="stat"><div class="n">51</div><div class="l">真实在跑的应用项目</div></div>
-<div class="stat"><div class="n">114,968★</div><div class="l">51 应用 + 10 清单 累计 Star</div></div>
+<div class="stat"><div class="n">58</div><div class="l">真实在跑的应用项目</div></div>
+<div class="stat"><div class="n">115,203★</div><div class="l">58 应用 + 11 清单 累计 Star</div></div>
 <div class="stat"><div class="n">12</div><div class="l">覆盖方向（统一分类）</div></div>
 <div class="stat"><div class="n">81ms</div><div class="l">jev-trader 单步决策延迟</div></div>
 </div>
@@ -78,7 +78,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 
 <section>
 <h2>一、先搞懂：Jev 到底是什么</h2>
-<p class="sub">一句话——它是「判断层」原语，不是「生成层」模型。理解了这一点，下面 51 个项目就全串起来了。</p>
+<p class="sub">一句话——它是「判断层」原语，不是「生成层」模型。理解了这一点，下面 58 个项目就全串起来了。</p>
 <div class="concept">
 <div class="cc"><span class="tag">本质</span><h3>TypeSafe 的 System One 模型</h3><p>官方 slogan 是 <b>"i. am. speed."</b>。核心 API 原语只有三个：<b>Choice</b>（选）、<b>Score</b>（打分）、<b>Noul</b>（无意义/跳过）。输出带类型、可工程化，不像大模型那样吐自由文本。</p></div>
 <div class="cc"><span class="tag">架构角色</span><h3>廉价低延迟的「判断路由层」</h3><p>大模型负责「生成」，Jev 负责「判断与路由」。代价从「每次都调贵模型」降为「只在必要时调」。它观察状态→下判断→把执行交给大模型或底层系统。</p></div>
@@ -177,8 +177,8 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div></div></div>
 
 </section>
-<section><h2>三、全景资料卡 · 51 个项目（统一 12 类）</h2><p class="sub">按用途合并首批 21 个与生态扩张 30 个，Star 数为 GitHub API 实测刷新（2026-09-22）。带 <span class="hl">NEW</span> 标记为 2026-09-22 新增的 30 个扩张项目。</p>
-<h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">浏览器 / 桌面自动化（4）</h3>
+<section><h2>三、全景资料卡 · 58 个项目（统一 12 类）</h2><p class="sub">按用途合并首批 21 个与生态扩张 30 个，Star 数为 GitHub API 实测刷新（2026-09-22）。带 <span class="hl">NEW</span> 标记为 2026-09-22 新增的 30 个扩张项目。</p>
+<h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">浏览器 / 桌面自动化（5）</h3>
 <div class="grid">
 
 <div class="ncard">
@@ -223,6 +223,17 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="act"><b>上手</b>　macOS 本地运行，给目标 App 发指令，Jev 选动作。</div>
 <div class="act" style="border-top:none;padding-top:6px;"><b>02 注意</b>　仅 macOS；依赖无障碍树，未正确暴露 a11y 的 App 兼容有限。</div>
 <div class="go">→ <a href="https://github.com/milind-soni/tiptour-macos" target="_blank" rel="noopener">详情</a></div>
+</div>
+
+<div class="ncard">
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">浏览器 / 桌面自动化</span></div>
+<h3>tinycomputer</h3>
+<div class="desc">基于决策模型（JEV）的桌面 + 浏览器自动化 harness，用 Rust 写成。Jev 负责「下一步点哪、做什么」，底层走无障碍树，本地优先、开源。</div>
+<div class="stats">6 <span>Stars</span>　·　Rust　·　GPL-3.0</div>
+<div class="chips"><span class="chip">agent-framework</span> <span class="chip">ai-agents</span> <span class="chip">automation</span> <span class="chip">desktop</span></div>
+<div class="act"><b>上手</b>　Rust 二进制本地运行，把目标 App / 网页交给它，Jev 做动作决策；适合做本地电脑 / 浏览器自动化的底座。</div>
+
+<div class="go">→ <a href="https://github.com/tinyhumansai/tinycomputer" target="_blank" rel="noopener">详情</a></div>
 </div>
 </div>
 <h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">代码 / 上下文管理（6）</h3>
@@ -294,7 +305,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="go">→ <a href="https://github.com/qkal/Canny" target="_blank" rel="noopener">详情</a></div>
 </div>
 </div>
-<h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">集成 / 工具箱 (MCP & CLI)（4）</h3>
+<h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">集成 / 工具箱 (MCP & CLI)（5）</h3>
 <div class="grid">
 
 <div class="ncard">
@@ -339,6 +350,17 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="act"><b>上手</b>　npx 起 OpenAI 兼容代理，Jev 判意图命中则复用响应，降成本。</div>
 
 <div class="go">→ <a href="https://github.com/kushals256/jevcache" target="_blank" rel="noopener">详情</a></div>
+</div>
+
+<div class="ncard">
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">集成 / 工具箱 (MCP & CLI)</span></div>
+<h3>JevTools</h3>
+<div class="desc">一组给 Jev 开发用的轻量工具与脚本合集，把脚手架、调试、调用封装等常见杂活打包好，少写样板、专注判断逻辑本身。</div>
+<div class="stats">4 <span>Stars</span>　·　HTML　·　GPL-3.0</div>
+<div class="chips"><span class="chip">demo</span> <span class="chip">jev</span> <span class="chip">jev-ai</span> <span class="chip">jev-model</span></div>
+<div class="act"><b>上手</b>　git clone 后按需挑脚本用，或当模板抄进自己的 Jev 开发流程；偏工具箱，按需取用。</div>
+
+<div class="go">→ <a href="https://github.com/RileyCarney/JevTools" target="_blank" rel="noopener">详情</a></div>
 </div>
 </div>
 <h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">路由 / 技能 / Agent 调度（3）</h3>
@@ -576,7 +598,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="go">→ <a href="https://github.com/featherless-ai/simple-jev" target="_blank" rel="noopener">详情</a></div>
 </div>
 </div>
-<h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">交易 / 金融（3）</h3>
+<h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">交易 / 金融（5）</h3>
 <div class="grid">
 
 <div class="ncard">
@@ -611,8 +633,30 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="act" style="border-top:none;padding-top:6px;"><b>02 注意</b>　12k★ 是生态里体量最大的交易向项目；实盘涉及资金风险，先用回测和 paper trade 验证 Jev 的判断边界。</div>
 <div class="go">→ <a href="https://github.com/OpenByteInc/QuantDinger" target="_blank" rel="noopener">详情</a></div>
 </div>
+
+<div class="ncard">
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">交易 / 金融</span></div>
+<h3>jev-paper-trader</h3>
+<div class="desc">用虚拟 10 万美金在 Polymarket、Kalshi 真实市场做模拟交易，验证「Jev 研究 + Claude 分析」能不能跑赢市场。全程 paper trade，不涉及真实资金。</div>
+<div class="stats">3 <span>Stars</span>　·　Python　·　未声明</div>
+<div class="chips"><span class="chip">交易 / 金融</span></div>
+<div class="act"><b>上手</b>　git clone 跑内置示例，看 Jev 的出价 / 研究判断如何与 Claude 的论证配合；仅模拟盘，不涉及真实资金。</div>
+
+<div class="go">→ <a href="https://github.com/MojoAI-King/jev-paper-trader" target="_blank" rel="noopener">详情</a></div>
 </div>
-<h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">游戏 / 机器人 / 移动（5）</h3>
+
+<div class="ncard">
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">交易 / 金融</span></div>
+<h3>ml-quant-trading</h3>
+<div class="desc">PyTorch 量化研究框架：213 个因子、偏置校正、组合优化与回测，关键决策点用 System-One / Jev 式判断。覆盖 A 股，可复现。</div>
+<div class="stats">91 <span>Stars</span>　·　Python　·　MIT</div>
+<div class="chips"><span class="chip">a-shares</span> <span class="chip">ai-agents</span> <span class="chip">algorithmic-trading</span> <span class="chip">alpha-factors</span></div>
+<div class="act"><b>上手</b>　git clone 跑示例 notebook，看因子研究与组合决策怎么接 Jev 式判断；先回测验证再上实盘。</div>
+
+<div class="go">→ <a href="https://github.com/initial-d/ml-quant-trading" target="_blank" rel="noopener">详情</a></div>
+</div>
+</div>
+<h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">游戏 / 机器人 / 移动（6）</h3>
 <div class="grid">
 
 <div class="ncard">
@@ -669,8 +713,19 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 
 <div class="go">→ <a href="https://github.com/droidrun/mobile-jev" target="_blank" rel="noopener">详情</a></div>
 </div>
+
+<div class="ncard">
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">游戏 / 机器人 / 移动</span></div>
+<h3>jevcraft</h3>
+<div class="desc">用 Jev 驱动的 Minecraft 机器人。把游戏状态喂给 Jev，由它判断下一步采矿、建造还是移动，演示「决策模型控游戏」的玩法。</div>
+<div class="stats">3 <span>Stars</span>　·　JavaScript　·　MIT</div>
+<div class="chips"><span class="chip">游戏 / 机器人 / 移动</span></div>
+<div class="act"><b>上手</b>　按 README 起本地 Minecraft 环境跑 demo，观察 Jev 怎么在游戏循环里做决策。</div>
+
+<div class="go">→ <a href="https://github.com/mrubens/jevcraft" target="_blank" rel="noopener">详情</a></div>
 </div>
-<h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">搜索 / 数据 / 行业应用（8）</h3>
+</div>
+<h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">搜索 / 数据 / 行业应用（10）</h3>
 <div class="grid">
 
 <div class="ncard">
@@ -760,6 +815,28 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 
 <div class="go">→ <a href="https://github.com/sutro-sh/jev-align" target="_blank" rel="noopener">详情</a></div>
 </div>
+
+<div class="ncard">
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">搜索 / 数据 / 行业应用</span></div>
+<h3>model-market-comparison</h3>
+<div class="desc">「Benchmark Heaven」：汇总 AI 模型基准（含来源与建模成本），并维护 JevBench / ImageJevBench 决策模型排行榜，方便横向对比各决策模型的性价比。</div>
+<div class="stats">20 <span>Stars</span>　·　JavaScript　·　MIT</div>
+<div class="chips"><span class="chip">ai-benchmark</span> <span class="chip">benchmark-heaven</span> <span class="chip">decision-models</span> <span class="chip">image-benchmark</span></div>
+<div class="act"><b>上手</b>　打开在线榜单或直接跑仓库脚本，按任务维度查决策模型的延迟 / 成本 / 准确率排行。</div>
+
+<div class="go">→ <a href="https://github.com/fstandhartinger/model-market-comparison" target="_blank" rel="noopener">详情</a></div>
+</div>
+
+<div class="ncard">
+<div class="eyebrow"><span class="dot"></span><span class="lab">PROJECT NOTE</span><span class="cat">搜索 / 数据 / 行业应用</span></div>
+<h3>jev-docs</h3>
+<div class="desc">社区维护的 Jev / TypeSafe System One 编年史：API、SDK、Agent 实践与工程最佳实践的演进记录，当上手参考书翻。</div>
+<div class="stats">6 <span>Stars</span>　·　Python　·　MIT</div>
+<div class="chips"><span class="chip">agentic-ai</span> <span class="chip">ai-agents</span> <span class="chip">ai-engineering</span> <span class="chip">developer-tools</span></div>
+<div class="act"><b>上手</b>　当文档站 / 参考库用，查 Jev API 与 SDK 的来龙去脉和踩坑经验；想深入原理时翻。</div>
+
+<div class="go">→ <a href="https://github.com/chenrui333/jev-docs" target="_blank" rel="noopener">详情</a></div>
+</div>
 </div>
 <h3 style="color:var(--mut2);font-size:13px;letter-spacing:1px;margin:22px 0 4px;">产品 / 创业（1）</h3>
 <div class="grid">
@@ -776,7 +853,7 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 </div>
 </div>
 </section>
-<section><h2>四、官方截图 · 仓库实拍（51 仓）</h2><p class="sub">无头 Chrome 直截 GitHub 仓库页（含 README 顶部），按 Star 数排序。点击跳转原仓库。</p><div class="shots">
+<section><h2>四、官方截图 · 仓库实拍（58 仓）</h2><p class="sub">无头 Chrome 直截 GitHub 仓库页（含 README 顶部），按 Star 数排序。点击跳转原仓库。</p><div class="shots">
 <a class="shot ph" href="https://github.com/browser-use/jev-ultrafast" target="_blank" rel="noopener">jev-ultrafast<br>截图待补<br><span class="s">22,776★</span></a>
 <a class="shot ph" href="https://github.com/vercel-labs/json-render" target="_blank" rel="noopener">json-render<br>截图待补<br><span class="s">18,632★</span></a>
 <a class="shot ph" href="https://github.com/OpenByteInc/QuantDinger" target="_blank" rel="noopener">QuantDinger<br>截图待补<br><span class="s">12,728★</span></a>
@@ -824,14 +901,21 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <a class="shot ph" href="https://github.com/qkal/Canny" target="_blank" rel="noopener">Canny<br>截图待补<br><span class="s">122★</span></a>
 <a class="shot ph" href="https://github.com/GhalebDweikat/winnow" target="_blank" rel="noopener">winnow<br>截图待补<br><span class="s">109★</span></a>
 <a class="shot ph" href="https://github.com/ellipsis-dev/blink" target="_blank" rel="noopener">blink<br>截图待补<br><span class="s">100★</span></a>
+<a class="shot ph" href="https://github.com/initial-d/ml-quant-trading" target="_blank" rel="noopener">ml-quant-trading<br>截图待补<br><span class="s">91★</span></a>
 <a class="shot ph" href="https://github.com/sharziki/semdecide" target="_blank" rel="noopener">semdecide<br>截图待补<br><span class="s">77★</span></a>
 <a class="shot ph" href="https://github.com/emrickgarrett/OneVOneJev" target="_blank" rel="noopener">OneVOneJev<br>截图待补<br><span class="s">42★</span></a>
 <a class="shot ph" href="https://github.com/AkashPriyadarshii/jev-curate" target="_blank" rel="noopener">jev-curate<br>截图待补<br><span class="s">22★</span></a>
+<a class="shot ph" href="https://github.com/fstandhartinger/model-market-comparison" target="_blank" rel="noopener">model-market-comparison<br>截图待补<br><span class="s">20★</span></a>
 <a class="shot ph" href="https://github.com/kushals256/jevcache" target="_blank" rel="noopener">jevcache<br>截图待补<br><span class="s">12★</span></a>
+<a class="shot ph" href="https://github.com/tinyhumansai/tinycomputer" target="_blank" rel="noopener">tinycomputer<br>截图待补<br><span class="s">6★</span></a>
+<a class="shot ph" href="https://github.com/chenrui333/jev-docs" target="_blank" rel="noopener">jev-docs<br>截图待补<br><span class="s">6★</span></a>
+<a class="shot ph" href="https://github.com/RileyCarney/JevTools" target="_blank" rel="noopener">JevTools<br>截图待补<br><span class="s">4★</span></a>
+<a class="shot ph" href="https://github.com/MojoAI-King/jev-paper-trader" target="_blank" rel="noopener">jev-paper-trader<br>截图待补<br><span class="s">3★</span></a>
+<a class="shot ph" href="https://github.com/mrubens/jevcraft" target="_blank" rel="noopener">jevcraft<br>截图待补<br><span class="s">3★</span></a>
 </div></section>
 
 <section>
-<h2>五、社区精选清单 · 10 个导航站</h2>
+<h2>五、社区精选清单 · 11 个导航站</h2>
 <p class="sub">想跟进生态全貌、找客户端/SDK/框架，直接逛这几个社区清单。按 Star 排序，均为 GitHub 仓库。注意：多个作者各自维护了同名 <code>awesome-jev</code> 清单，属生态碎片化，按需取用即可。</p>
 <div class="grid">
 
@@ -911,11 +995,19 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 <div class="ncard">
 <div class="eyebrow"><span class="dot"></span><span class="lab">AWESOME LIST</span><span class="cat">导航</span></div>
 <h3>awesome-jev</h3>
+<div class="desc">社区维护的 Jev 资源清单，精选 typed AI 决策的可运行示例，偏「拿来就能跑」的实战导向。</div>
+<div class="stats">102 <span>Stars</span>　·　Python</div>
+<div class="go">→ <a href="https://github.com/AppitStudio/awesome-jev" target="_blank" rel="noopener">github.com/AppitStudio/awesome-jev</a></div>
+</div>
+
+<div class="ncard">
+<div class="eyebrow"><span class="dot"></span><span class="lab">AWESOME LIST</span><span class="cat">导航</span></div>
+<h3>awesome-jev</h3>
 <div class="desc">由 RoboKrunch 维护，含真实延迟/账单实测标注。</div>
 <div class="stats">3 <span>Stars</span>　·　未知</div>
 <div class="go">→ <a href="https://github.com/robokrunch/awesome-jev" target="_blank" rel="noopener">github.com/robokrunch/awesome-jev</a></div>
 </div>
 </div></section>
 
-<p class="note">说明：本文档由 X 推文 <b>@Pluvio9yte/status/2101831273224311035</b> 整理扩展而成。51 个应用仓库 + 10 个社区清单均经 GitHub API 实测存在（2026-09-22 刷新），Star / 语言 / 协议为实时数据；中文功能描述来自原帖与社区清单上下文，未做改写。Jev 即 TypeSafe AI 的 System One 模型（官方 slogan "i. am. speed."），相关能力以官方 docs 为准。截图因渲染限流个别缺失不影响档案完整性。如需转成公众号图文或腾讯文档，可在此基础上二次编排。</p>
+<p class="note">说明：本文档由 X 推文 <b>@Pluvio9yte/status/2101831273224311035</b> 整理扩展而成。58 个应用仓库 + 11 个社区清单均经 GitHub API 实测存在（2026-09-22 刷新），Star / 语言 / 协议为实时数据；中文功能描述来自原帖与社区清单上下文，未做改写。Jev 即 TypeSafe AI 的 System One 模型（官方 slogan "i. am. speed."），相关能力以官方 docs 为准。截图因渲染限流个别缺失不影响档案完整性。如需转成公众号图文或腾讯文档，可在此基础上二次编排。</p>
 </body></html>

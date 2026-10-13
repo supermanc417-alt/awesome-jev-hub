@@ -249,7 +249,7 @@ def main():
 
     # ---------- 6. 提交推送 ----------
     if push and not dry:
-        files = ["data/jev_data.json", "data/jev_data2.json", "data/new_projects.json",
+        files = ["scripts/build_unified.py", "data/jev_data.json", "data/jev_data2.json", "data/new_projects.json",
                  "data/candidates.json", "jev-collection.html", "README.md", "weekly_report.md"]
         msg = f"chore: weekly jev hub update {today.isoformat()} (+{len(new_projects)} new)"
         # 仅 add 指定文件，避免误带 screenshots 等
