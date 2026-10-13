@@ -3,9 +3,9 @@
 两段画廊合并为一段，社区清单单列。基于刷新后的 jev_data.json / jev_data2.json。"""
 import json, os
 
-BASE = os.path.dirname(os.path.abspath(__file__))
-with open(os.path.join(BASE, "jev_data.json")) as f: DATA = json.load(f)
-with open(os.path.join(BASE, "jev_data2.json")) as f: D2 = json.load(f)
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 仓库根
+with open(os.path.join(BASE, "data", "jev_data.json")) as f: DATA = json.load(f)
+with open(os.path.join(BASE, "data", "jev_data2.json")) as f: D2 = json.load(f)
 
 def lic(d): return d.get("license") or "未声明"
 def stars(n): return f"{n:,}"

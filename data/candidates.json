@@ -1,0 +1,185 @@
+{
+  "review": [
+    {
+      "full_name": "raro42/ai-stock-checker",
+      "html_url": "https://github.com/raro42/ai-stock-checker",
+      "description": "Local Docker paper-trading desk that refuses to lie: fee-aware fills, anti-churn gates, optional AI — honest marks, not dashboard theater.",
+      "stargazers_count": 5,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:49:49Z",
+      "created_at": "2026-07-25T19:10:46Z"
+    },
+    {
+      "full_name": "oceanbase/powercontext",
+      "html_url": "https://github.com/oceanbase/powercontext",
+      "description": "Not only memory but a full story.",
+      "stargazers_count": 1305,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:49:33Z",
+      "created_at": "2025-11-10T02:46:06Z"
+    },
+    {
+      "full_name": "Parcha-ai/agentrun",
+      "html_url": "https://github.com/Parcha-ai/agentrun",
+      "description": "The Agentrun Workflow DSL",
+      "stargazers_count": 228,
+      "language": "TypeScript",
+      "pushed_at": "2026-10-13T06:48:48Z",
+      "created_at": "2026-09-23T00:27:34Z"
+    },
+    {
+      "full_name": "skyfireitdiy/Jarvis",
+      "html_url": "https://github.com/skyfireitdiy/Jarvis",
+      "description": "A multi-agent collaboration framework that lets AI agents work together, operate your computer, and browse the web.",
+      "stargazers_count": 145,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:48:24Z",
+      "created_at": "2024-12-01T02:24:41Z"
+    },
+    {
+      "full_name": "easyhaloo/afk",
+      "html_url": "https://github.com/easyhaloo/afk",
+      "description": "",
+      "stargazers_count": 4,
+      "language": "TypeScript",
+      "pushed_at": "2026-10-13T06:48:17Z",
+      "created_at": "2026-07-27T03:36:05Z"
+    },
+    {
+      "full_name": "MichelKerkmeester/skilled-agent-harness_spec-driven-loops",
+      "html_url": "https://github.com/MichelKerkmeester/skilled-agent-harness_spec-driven-loops",
+      "description": "AI-assisted coding setup that helps you spend less time re-explaining context, and more time shipping with better output. Includes a custom spec kit, memory, agent and skill framework.",
+      "stargazers_count": 37,
+      "language": "TypeScript",
+      "pushed_at": "2026-10-13T06:48:02Z",
+      "created_at": "2025-12-23T11:30:47Z"
+    },
+    {
+      "full_name": "hamzafer/claude-code-mods",
+      "html_url": "https://github.com/hamzafer/claude-code-mods",
+      "description": "Claude Code mods: plugins built on hooks that add live lines above the prompt, guards, panes and games. Context bar, usage meter, Codex review watch, Markdown preview, Spotify now playing and more.",
+      "stargazers_count": 217,
+      "language": "TypeScript",
+      "pushed_at": "2026-10-13T06:46:55Z",
+      "created_at": "2026-10-02T13:15:06Z"
+    },
+    {
+      "full_name": "OpenAgentsInc/openagents",
+      "html_url": "https://github.com/OpenAgentsInc/openagents",
+      "description": "Monorepo & docs",
+      "stargazers_count": 457,
+      "language": "Rust",
+      "pushed_at": "2026-10-13T06:46:15Z",
+      "created_at": "2023-11-07T16:16:46Z"
+    },
+    {
+      "full_name": "linny006/awesome-agent-skills",
+      "html_url": "https://github.com/linny006/awesome-agent-skills",
+      "description": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a",
+      "stargazers_count": 39,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:45:31Z",
+      "created_at": "2026-05-24T01:09:07Z"
+    },
+    {
+      "full_name": "linny006/agent-eval-harness",
+      "html_url": "https://github.com/linny006/agent-eval-harness",
+      "description": "Live, open-source benchmark for comparing AI coding agents on real GitHub issues",
+      "stargazers_count": 6,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:45:28Z",
+      "created_at": "2026-05-24T01:08:04Z"
+    },
+    {
+      "full_name": "linny006/llm-eval-tracker",
+      "html_url": "https://github.com/linny006/llm-eval-tracker",
+      "description": "Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub",
+      "stargazers_count": 6,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:45:21Z",
+      "created_at": "2026-05-23T10:51:52Z"
+    },
+    {
+      "full_name": "linny006/agent-framework-radar",
+      "html_url": "https://github.com/linny006/agent-framework-radar",
+      "description": "Live index of the newest agent frameworks shipping on GitHub, sorted by recency not stars",
+      "stargazers_count": 8,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:45:20Z",
+      "created_at": "2026-05-23T10:52:28Z"
+    },
+    {
+      "full_name": "linny006/claude-code-plugin-tracker",
+      "html_url": "https://github.com/linny006/claude-code-plugin-tracker",
+      "description": "Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub",
+      "stargazers_count": 6,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:45:17Z",
+      "created_at": "2026-05-23T10:30:45Z"
+    },
+    {
+      "full_name": "linny006/trending-claude-skills",
+      "html_url": "https://github.com/linny006/trending-claude-skills",
+      "description": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes",
+      "stargazers_count": 126,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:45:12Z",
+      "created_at": "2026-05-23T10:00:25Z"
+    },
+    {
+      "full_name": "skyming/awesome-ai-agent",
+      "html_url": "https://github.com/skyming/awesome-ai-agent",
+      "description": "AI Agent 资源汇总，不限于基础概念、Harness 实践、RAG、测评基准、感知记忆、开源项目推荐、核心论文、开源项目等",
+      "stargazers_count": 302,
+      "language": "未知",
+      "pushed_at": "2026-10-13T06:44:56Z",
+      "created_at": "2025-03-24T02:57:47Z"
+    },
+    {
+      "full_name": "dirien/dirien",
+      "html_url": "https://github.com/dirien/dirien",
+      "description": "All about Engin Diri",
+      "stargazers_count": 9,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:44:24Z",
+      "created_at": "2021-05-25T19:46:35Z"
+    },
+    {
+      "full_name": "sileod/tasksource",
+      "html_url": "https://github.com/sileod/tasksource",
+      "description": "Datasets collection and preprocessings framework for NLP extreme multitask learning",
+      "stargazers_count": 220,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:44:23Z",
+      "created_at": "2022-12-06T15:29:02Z"
+    },
+    {
+      "full_name": "kamp-us/demlik",
+      "html_url": "https://github.com/kamp-us/demlik",
+      "description": "TEA-faithful state machine substrate for TypeScript — one pure reducer, every host adapter. The @demlik/tea package.",
+      "stargazers_count": 7,
+      "language": "TypeScript",
+      "pushed_at": "2026-10-13T06:43:52Z",
+      "created_at": "2026-08-16T01:02:16Z"
+    },
+    {
+      "full_name": "nicobailon/pi-interactive-shell",
+      "html_url": "https://github.com/nicobailon/pi-interactive-shell",
+      "description": "Pi coding agent extension that allows Pi to autonomously control interactive CLIs in an observable overlay. Full PTY emulation, no  tmux, token efficient. User can take over anytime.",
+      "stargazers_count": 593,
+      "language": "TypeScript",
+      "pushed_at": "2026-10-13T06:48:42Z",
+      "created_at": "2026-01-18T01:28:58Z"
+    },
+    {
+      "full_name": "Aaron617/agent-arXiv-daily",
+      "html_url": "https://github.com/Aaron617/agent-arXiv-daily",
+      "description": "🔥 Automatically Update Agent Papers Daily",
+      "stargazers_count": 10,
+      "language": "Python",
+      "pushed_at": "2026-10-13T06:43:38Z",
+      "created_at": "2025-08-29T06:10:30Z"
+    }
+  ],
+  "updated_at": "2026-10-13"
+}
