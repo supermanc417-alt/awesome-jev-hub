@@ -195,19 +195,28 @@ def main():
               {"review": new_review, "updated_at": today.isoformat()})
     log(f"新发现: 累积收录 {len(new_projects)} 个 (本周新增 {len(weekly_new)}), 待审 {len(new_review)} 个")
 
-    # ---------- 3. 更新 README 新发现段 ----------
+    # ---------- 3. 更新 README 新发现段（按分类，取自 data/recent_additions.json）----------
     readme_path = os.path.join(REPO, "README.md")
     with open(readme_path, encoding="utf-8") as f:
         rm = f.read()
-    if new_projects:
-        lines = ["_由每周自动更新脚本（`scripts/update_jev_hub.py`）经 GitHub API 实测发现，尚未做中文精排。如发现已归档或失效，欢迎提 issue / PR。_\n"]
-        for full, m in sorted(new_projects.items(), key=lambda x: -x[1]["stargazers_count"]):
-            lines.append(f"- [{full}]({m['html_url']}) *(⭐ {m['stargazers_count']:,})* — {m['description']}")
-        if new_review:
-            lines.append(f"\n_另有 {len(new_review)} 个低置信候选在 `data/candidates.json` 待人工复核。_")
-        body = "\n".join(lines)
-    else:
-        body = "_由每周自动更新脚本（`scripts/update_jev_hub.py`）经 GitHub API 实测发现，尚未做中文精排。如发现已归档或失效，欢迎提 issue / PR。_\n"
+    recent = load_json(os.path.join(DATA, "recent_additions.json"))
+    lines = ["_近期新发现的开源项目，已按方向归入上方「生态项目 / 社区精选清单」对应分类并补中文描述；Star / 语言经 GitHub API 实测。_\n"]
+    if recent:
+        by_cat = {}
+        for full, m in recent.items():
+            by_cat.setdefault(m.get("category", "其他"), []).append((full, m))
+        for cat in sorted(by_cat):
+            lines.append(f"### {cat}\n")
+            for full, m in sorted(by_cat[cat], key=lambda x: -x[1].get("stargazers_count", 0)):
+                lines.append(f"- [{full}]({m['html_url']}) *(⭐ {m['stargazers_count']:,} · {m.get('language','')})* — {m.get('cn') or m.get('description','')}")
+            lines.append("")
+    # 尚未归入的新发现（待人工补中文 + 定分类）
+    pending = {k: v for k, v in new_projects.items() if k not in recent}
+    if pending:
+        lines.append(f"_另有 {len(pending)} 个高置信新发现待人工归入（见 `data/new_projects.json`）。_\n")
+        for full, m in sorted(pending.items(), key=lambda x: -x[1].get("stargazers_count", 0)):
+            lines.append(f"- [{full}]({m['html_url']}) *(⭐ {m['stargazers_count']:,})* — {m.get('description','')}")
+    body = "\n".join(lines)
     rm = re.sub(r"<!-- NEW_DISCOVERIES_START -->.*?<!-- NEW_DISCOVERIES_END -->",
                 f"<!-- NEW_DISCOVERIES_START -->\n## 近期新发现\n\n{body}\n<!-- NEW_DISCOVERIES_END -->",
                 rm, flags=re.S)
@@ -250,7 +259,7 @@ def main():
     # ---------- 6. 提交推送 ----------
     if push and not dry:
         files = ["scripts/build_unified.py", "data/jev_data.json", "data/jev_data2.json", "data/new_projects.json",
-                 "data/candidates.json", "jev-collection.html", "README.md", "weekly_report.md"]
+                 "data/candidates.json", "data/recent_additions.json", "jev-collection.html", "README.md", "weekly_report.md"]
         msg = f"chore: weekly jev hub update {today.isoformat()} (+{len(new_projects)} new)"
         # 仅 add 指定文件，避免误带 screenshots 等
         add = subprocess.run(["git", "add"] + files, cwd=REPO, capture_output=True, text=True)

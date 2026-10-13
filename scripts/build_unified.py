@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """统一重构：把 21+30 应用项目合并为一个「全景资料卡」板块（统一 12 类），
 两段画廊合并为一段，社区清单单列。基于刷新后的 jev_data.json / jev_data2.json。"""
-import json, os
+import json, os, re
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 仓库根
 with open(os.path.join(BASE, "data", "jev_data.json")) as f: DATA = json.load(f)
@@ -31,8 +31,10 @@ EXPANSION = {
  "thruwire/foreman","pulseaiclub/phi","notque/vexjoy-agent","dabit3/jev-experiments","Asymptote-Labs/agent-beacon",
  "kitfunso/hippo-memory","reticlehq/reticle","gargpratyush/jev-router","kerpopule/hermes-jev-skills","wuyoscar/jev-skill",
  "superagents-lab/jev-search","realZachi/pg-jev","kyotofin/tax-doc-classifier","jev-chat/jev-chat-jarvis","samuelfaj/distill",
- "sutro-sh/jev-align","OpenByteInc/QuantDinger","rmalde/minecraft-agent","wy-coliney/jev-browser-use","droidrun/mobile-jev","milind-soni/tiptour-macos"
+ "sutro-sh/jev-align","OpenByteInc/QuantDinger","rmalde/minecraft-agent","wy-coliney/jev-browser-use","droidrun/mobile-jev","milind-soni/tiptour-macos",
+ "tinyhumansai/tinycomputer","RileyCarney/JevTools","mrubens/jevcraft","MojoAI-King/jev-paper-trader","initial-d/ml-quant-trading","fstandhartinger/model-market-comparison","chenrui333/jev-docs"
 }
+RECENT_META = {"AppitStudio/awesome-jev"}  # 近期新收录的社区清单
 
 # ---- 中文描述 / 上手 / 注意（合并两批）----
 CN = {
@@ -290,6 +292,69 @@ h2{font-size:21px;margin:0 0 6px;padding-left:12px;border-left:3px solid var(--o
 .note{font-size:12px;color:var(--mut2);border-top:1px dashed var(--line2);margin-top:40px;padding-top:16px;}
 .hl{color:var(--org);font-weight:700;}
 </style>"""
+
+# ---- README 分段重渲（让 graduation 同时同步 README，避免只更新 HTML 不更新 README）----
+def write_readme():
+    rp = os.path.join(BASE, "README.md")
+    rm = open(rp, encoding="utf-8").read()
+
+    stats = f"""<!-- STATS_START -->
+[![Projects](https://img.shields.io/badge/projects-{n_apps}-blue.svg)](#生态项目)
+[![GitHub stars](https://img.shields.io/github/stars/supermanc417-alt/awesome-jev-hub?style=social)](https://github.com/supermanc417-alt/awesome-jev-hub)
+
+[English](README_EN.md) | 简体中文
+
+# Awesome Jev Hub
+
+> 一份持续维护的 **Jev / TypeSafe「System One」模型生态档案**：概念、实战项目、社区清单、数据卡与官方仓库截图。
+
+**规模**：{n_apps} 个应用项目 · {n_cat} 个方向 · {n_meta} 个社区清单 · 生态累计 ⭐ {total_stars:,}（应用 {old_stars:,} + 社区清单 {meta_stars:,}）
+<!-- STATS_END -->"""
+
+    eco = ["<!-- ECOSYSTEM_START -->", "## 生态项目", "",
+           f"按方向归并后的 {n_apps} 个应用项目，描述已全部译为中文（忠实于各仓库官方说明）。星标与语言为 GitHub API 实测快照（2026-10-13）。带 🆕 为近期新收录项目。", ""]
+    for cat, fs in CAT.items():
+        eco.append(f"### {cat}（{len(fs)}）")
+        eco.append("")
+        for full in fs:
+            d = get(full)
+            flag = " 🆕" if full in EXPANSION else ""
+            eco.append(f"- [{d['owner']}/{d['repo']}]({d['html_url']}) *(⭐ {stars(d['stargazers_count'])} · {d['language']})*{flag} — {CN[full]}")
+        eco.append("")
+    eco.append("<!-- ECOSYSTEM_END -->")
+
+    comm = ["<!-- COMMUNITY_START -->", "## 社区精选清单", "",
+            "想跟进生态全貌、找客户端 / SDK / 框架，直接逛这几个社区清单（按 ⭐ 排序）。多个作者各自维护了同名 `awesome-jev` 清单，属生态碎片化，按需取用即可。", ""]
+    for full in sorted(META, key=lambda f: D2[f].get("stargazers_count", 0), reverse=True):
+        d = D2[full]
+        flag = " 🆕" if full in RECENT_META else ""
+        comm.append(f"- [{d['owner']}/{d['repo']}]({d['html_url']}) *(⭐ {stars(d['stargazers_count'])})*{flag} — {META_CN[full]}")
+    comm.append("")
+    comm.append("<!-- COMMUNITY_END -->")
+
+    notes = f"""<!-- NOTES_START -->
+## 文档与数据
+
+- **`jev-collection.html`** — 完整可视化收藏篇：概念卡 + 6 张重点详解资料卡 + {n_apps} 张全景资料卡（含官方截图画廊）。在线版见 [GitHub Pages](https://supermanc417-alt.github.io/awesome-jev-hub/jev-collection.html)。
+- **`data/jev_data.json`** / **`data/jev_data2.json`** — 各项目 GitHub 实测元数据（Star / 语言 / 协议 / topics / 时间）。
+- **`screenshots/`** — {n_apps} 个仓库的 GitHub 实拍截图（无头 Chrome 直截，本地化）。
+- **`scripts/build_unified.py`** — 由数据 JSON 生成 `jev-collection.html` 与 README 各分段的脚本。
+
+## 收录说明
+
+- {n_apps} 个应用仓库 + {n_meta} 个社区清单均经 GitHub API 实测存在（快照于 2026-10-13），Star / 语言 / 协议为当日数据；中文条目描述忠实转述自各仓库官方 `description` 与社区清单上下文，未做虚构。
+- Jev 即 TypeSafe AI 的 System One 模型（官方 slogan "i. am. speed."），相关能力以 [官方文档](https://typesafe.ai) 为准。
+- 本仓库为「聚合型 hub」，不替代上游社区清单；如发现项目已归档 / 失效，欢迎提交 issue 或 PR。
+<!-- NOTES_END -->"""
+
+    rm = re.sub(r"<!-- STATS_START -->.*?<!-- STATS_END -->", stats, rm, flags=re.S)
+    rm = re.sub(r"<!-- ECOSYSTEM_START -->.*?<!-- ECOSYSTEM_END -->", "\n".join(eco), rm, flags=re.S)
+    rm = re.sub(r"<!-- COMMUNITY_START -->.*?<!-- COMMUNITY_END -->", "\n".join(comm), rm, flags=re.S)
+    rm = re.sub(r"<!-- NOTES_START -->.*?<!-- NOTES_END -->", notes, rm, flags=re.S)
+    open(rp, "w", encoding="utf-8").write(rm)
+    print("written README.md (stats/ecosystem/community/notes)")
+
+write_readme()
 
 parts = []
 parts.append(f"""<!DOCTYPE html>

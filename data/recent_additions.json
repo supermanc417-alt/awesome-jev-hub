@@ -1,0 +1,66 @@
+{
+  "tinyhumansai/tinycomputer": {
+    "category": "浏览器 / 桌面自动化",
+    "cn": "基于决策模型（JEV）的桌面 + 浏览器自动化 harness，用 Rust 写成。Jev 负责「下一步点哪、做什么」，底层走无障碍树，本地优先、开源。",
+    "html_url": "https://github.com/tinyhumansai/tinycomputer",
+    "stargazers_count": 6,
+    "language": "Rust",
+    "discovered_at": "2026-10-13"
+  },
+  "RileyCarney/JevTools": {
+    "category": "集成 / 工具箱 (MCP & CLI)",
+    "cn": "一组给 Jev 开发用的轻量工具与脚本合集，把脚手架、调试、调用封装等常见杂活打包好，少写样板、专注判断逻辑本身。",
+    "html_url": "https://github.com/RileyCarney/JevTools",
+    "stargazers_count": 4,
+    "language": "HTML",
+    "discovered_at": "2026-10-13"
+  },
+  "mrubens/jevcraft": {
+    "category": "游戏 / 机器人 / 移动",
+    "cn": "用 Jev 驱动的 Minecraft 机器人。把游戏状态喂给 Jev，由它判断下一步采矿、建造还是移动，演示「决策模型控游戏」的玩法。",
+    "html_url": "https://github.com/mrubens/jevcraft",
+    "stargazers_count": 3,
+    "language": "JavaScript",
+    "discovered_at": "2026-10-13"
+  },
+  "MojoAI-King/jev-paper-trader": {
+    "category": "交易 / 金融",
+    "cn": "用虚拟 10 万美金在 Polymarket、Kalshi 真实市场做模拟交易，验证「Jev 研究 + Claude 分析」能不能跑赢市场。全程 paper trade，不涉及真实资金。",
+    "html_url": "https://github.com/MojoAI-King/jev-paper-trader",
+    "stargazers_count": 3,
+    "language": "Python",
+    "discovered_at": "2026-10-13"
+  },
+  "initial-d/ml-quant-trading": {
+    "category": "交易 / 金融",
+    "cn": "PyTorch 量化研究框架：213 个因子、偏置校正、组合优化与回测，关键决策点用 System-One / Jev 式判断。覆盖 A 股，可复现。",
+    "html_url": "https://github.com/initial-d/ml-quant-trading",
+    "stargazers_count": 91,
+    "language": "Python",
+    "discovered_at": "2026-10-13"
+  },
+  "fstandhartinger/model-market-comparison": {
+    "category": "搜索 / 数据 / 行业应用",
+    "cn": "「Benchmark Heaven」：汇总 AI 模型基准（含来源与建模成本），并维护 JevBench / ImageJevBench 决策模型排行榜，方便横向对比各决策模型的性价比。",
+    "html_url": "https://github.com/fstandhartinger/model-market-comparison",
+    "stargazers_count": 20,
+    "language": "JavaScript",
+    "discovered_at": "2026-10-13"
+  },
+  "chenrui333/jev-docs": {
+    "category": "搜索 / 数据 / 行业应用",
+    "cn": "社区维护的 Jev / TypeSafe System One 编年史：API、SDK、Agent 实践与工程最佳实践的演进记录，当上手参考书翻。",
+    "html_url": "https://github.com/chenrui333/jev-docs",
+    "stargazers_count": 6,
+    "language": "Python",
+    "discovered_at": "2026-10-13"
+  },
+  "AppitStudio/awesome-jev": {
+    "category": "社区精选清单",
+    "cn": "社区维护的 Jev 资源清单，精选 typed AI 决策的可运行示例，偏「拿来就能跑」的实战导向。",
+    "html_url": "https://github.com/AppitStudio/awesome-jev",
+    "stargazers_count": 102,
+    "language": "Python",
+    "discovered_at": "2026-10-13"
+  }
+}
