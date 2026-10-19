@@ -1,32 +1,30 @@
-# Jev Hub 周更新报告 · 2026-10-13
+# Jev Hub 周更新报告 · 2026-10-19
 
 ## 收录数据刷新
-- 刷新项目数: 61
+- 刷新项目数: 69
 - Star 有变动: 0 个
 
 
 ## 本周新入选（高置信，已收录）
-- 数量: 3
+- 数量: 1
 
-  - tinyhumansai/tinycomputer *(⭐ 6)* — Decision model (JEV) based harness to perform Desktop & Browser automation. Written in Rust. 
-  - initial-d/ml-quant-trading *(⭐ 91)* — PyTorch ML quant research: 213 factors, bias correction, portfolio optimization, backtesting, and System-One/Jev-style decisions.
-  - chenrui333/jev-docs *(⭐ 6)* — Community-maintained history of Jev / TypeSafe System One APIs, SDKs, agent guidance, and engineering best practices.
+  - chuloontop4-code/jev-instance-review *(⭐ 70)* — Best Roblox Studio Instance Reviewer 2026: Typed Jev Criteria and Exact Citations
 
 ## 待审候选（低置信，未收录）
-- 数量: 20
+- 数量: 30
 
-  - raro42/ai-stock-checker *(⭐ 5)* — Local Docker paper-trading desk that refuses to lie: fee-aware fills, anti-churn gates, optional AI — honest marks, not dashboard theater.
-  - oceanbase/powercontext *(⭐ 1,305)* — Not only memory but a full story.
-  - Parcha-ai/agentrun *(⭐ 228)* — The Agentrun Workflow DSL
-  - skyfireitdiy/Jarvis *(⭐ 145)* — A multi-agent collaboration framework that lets AI agents work together, operate your computer, and browse the web.
-  - easyhaloo/afk *(⭐ 4)* — 
-  - MichelKerkmeester/skilled-agent-harness_spec-driven-loops *(⭐ 37)* — AI-assisted coding setup that helps you spend less time re-explaining context, and more time shipping with better output. Includes a custom spec kit, memory, agent and skill framework.
-  - hamzafer/claude-code-mods *(⭐ 217)* — Claude Code mods: plugins built on hooks that add live lines above the prompt, guards, panes and games. Context bar, usage meter, Codex review watch, Markdown preview, Spotify now playing and more.
-  - OpenAgentsInc/openagents *(⭐ 457)* — Monorepo & docs
-  - linny006/awesome-agent-skills *(⭐ 39)* — Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a
-  - linny006/agent-eval-harness *(⭐ 6)* — Live, open-source benchmark for comparing AI coding agents on real GitHub issues
-  - linny006/llm-eval-tracker *(⭐ 6)* — Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub
-  - linny006/agent-framework-radar *(⭐ 8)* — Live index of the newest agent frameworks shipping on GitHub, sorted by recency not stars
-  - linny006/claude-code-plugin-tracker *(⭐ 6)* — Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub
-  - linny006/trending-claude-skills *(⭐ 126)* — Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes
-  - skyming/awesome-ai-agent *(⭐ 302)* — AI Agent 资源汇总，不限于基础概念、Harness 实践、RAG、测评基准、感知记忆、开源项目推荐、核心论文、开源项目等
+  - LostBeard/SpawnDev.ILGPU.ML *(⭐ 21)* — Hardware-agnostic machine learning infrastructure for .NET. Implements high-performance neural network layers in C# that are transpiled to run on WebGPU, CUDA, OpenCL, WebGL, CPU, and Wasm via SpawnDev.ILGPU. Optimized for Blazor WebAssembly and native GPU execution.
+  - Godefroy/micdrop *(⭐ 94)* — Micdrop is a set packages for node and browser that simplify voice conversations with AI systems.
+  - ash-project/ash_ai *(⭐ 192)* — Structured outputs, vectorization and tool calling for your Ash application
+  - dinpd/AgentAction *(⭐ 6)* — Trust infrastructure for autonomous AI agents: decision assurance, action authorization, runtime controls, and verifiable lifecycle evidence.
+  - JustinPerea/nebula-nodes *(⭐ 20)* — Nebula Nodes — local-first, BYOK node-based AI media canvas for image, video, audio, and 3D workflows, with Claude and Codex agents that build graphs in plain language.
+  - oaustegard/experiments *(⭐ 4)* — Random vibe-experiments
+  - rshade/finfocus *(⭐ 10)* — FinOps CLI for Pulumi — projected costs, actual spend tracking, budget enforcement, and cost optimization for cloud infrastructure
+  - griffinwork40/agent-afk *(⭐ 61)* — The coding agent you don’t have to watch. Start a task and walk away. AFK builds the feature, verifies its own work, and texts you when it’s done. You come back to a receipt of every step, every decision, and what’s waiting on you. If it’s unsure, it stops and asks instead of guessing.
+  - JustVugg/colibri *(⭐ 42,750)* — Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦
+  - littlecedar/sparkrun-recipe-registry *(⭐ 3)* — Spark Arena Recipe Registry
+  - PerryLink/perrylink *(⭐ 4)* — Independent third-party plugin family for DeepSeek Harness - not affiliated with DeepSeek
+  - Sallyn0225/eidolon-sc *(⭐ 42)* — 和《偶像大师 闪耀色彩》偶像实时语音/文字对话的 AI 分身：日语原声 + 中文字幕、回忆原作剧情、跨角色共享记忆；支持 Google/GitHub 登录与自带密钥，Docker Compose 一键部署（参考 LAPLACE Eidolon）
+  - SuperInstance/AI-Writings *(⭐ 4)* — Creative writing, essays, and philosophical explorations from the Exocortex project
+  - cc-claws/cc-code *(⭐ 6)* — 
+  - Dominic789654/awesome-deepseek-harness *(⭐ 386)* — A curated list of plugins, skills, MCP servers, patch/profile layers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh

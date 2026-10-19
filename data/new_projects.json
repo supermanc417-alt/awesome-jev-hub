@@ -1,1 +1,30 @@
-{}
+{
+  "chuloontop4-code/jev-instance-review": {
+    "full_name": "chuloontop4-code/jev-instance-review",
+    "exists": true,
+    "id": 1382347514,
+    "html_url": "https://github.com/chuloontop4-code/jev-instance-review",
+    "description": "Best Roblox Studio Instance Reviewer 2026: Typed Jev Criteria and Exact Citations",
+    "stargazers_count": 70,
+    "forks_count": 0,
+    "language": "HTML",
+    "topics": [
+      "jev",
+      "luau",
+      "open-source",
+      "roblox",
+      "roblox-studio",
+      "studio-plugin"
+    ],
+    "homepage": "",
+    "created_at": "2026-09-22T20:54:04Z",
+    "pushed_at": "2026-10-19T00:59:55Z",
+    "open_issues_count": 0,
+    "license": "未声明",
+    "archived": false,
+    "owner": "chuloontop4-code",
+    "repo": "jev-instance-review",
+    "discovered_at": "2026-10-19",
+    "confidence": "high"
+  }
+}
