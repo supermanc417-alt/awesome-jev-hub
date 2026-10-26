@@ -1,202 +1,49 @@
 {
   "review": [
     {
-      "full_name": "LostBeard/SpawnDev.ILGPU.ML",
-      "html_url": "https://github.com/LostBeard/SpawnDev.ILGPU.ML",
-      "description": "Hardware-agnostic machine learning infrastructure for .NET. Implements high-performance neural network layers in C# that are transpiled to run on WebGPU, CUDA, OpenCL, WebGL, CPU, and Wasm via SpawnDev.ILGPU. Optimized for Blazor WebAssembly and native GPU execution.",
-      "stargazers_count": 21,
-      "language": "C#",
-      "pushed_at": "2026-10-19T01:06:18Z",
-      "created_at": "2026-03-17T20:48:57Z"
-    },
-    {
-      "full_name": "Godefroy/micdrop",
-      "html_url": "https://github.com/Godefroy/micdrop",
-      "description": "Micdrop is a set packages for node and browser that simplify voice conversations with AI systems.",
-      "stargazers_count": 94,
-      "language": "MDX",
-      "pushed_at": "2026-10-19T01:05:13Z",
-      "created_at": "2025-02-21T17:25:29Z"
-    },
-    {
-      "full_name": "ash-project/ash_ai",
-      "html_url": "https://github.com/ash-project/ash_ai",
-      "description": "Structured outputs, vectorization and tool calling for your Ash application",
-      "stargazers_count": 192,
-      "language": "Elixir",
-      "pushed_at": "2026-10-19T01:05:07Z",
-      "created_at": "2024-08-29T21:20:18Z"
-    },
-    {
-      "full_name": "dinpd/AgentAction",
-      "html_url": "https://github.com/dinpd/AgentAction",
-      "description": "Trust infrastructure for autonomous AI agents: decision assurance, action authorization, runtime controls, and verifiable lifecycle evidence.",
-      "stargazers_count": 6,
-      "language": "TypeScript",
-      "pushed_at": "2026-10-19T01:04:58Z",
-      "created_at": "2026-05-11T04:39:31Z"
-    },
-    {
-      "full_name": "JustinPerea/nebula-nodes",
-      "html_url": "https://github.com/JustinPerea/nebula-nodes",
-      "description": "Nebula Nodes — local-first, BYOK node-based AI media canvas for image, video, audio, and 3D workflows, with Claude and Codex agents that build graphs in plain language.",
-      "stargazers_count": 20,
-      "language": "Python",
-      "pushed_at": "2026-10-19T01:04:53Z",
-      "created_at": "2026-04-23T10:50:37Z"
-    },
-    {
-      "full_name": "oaustegard/experiments",
-      "html_url": "https://github.com/oaustegard/experiments",
-      "description": "Random vibe-experiments",
-      "stargazers_count": 4,
-      "language": "Python",
-      "pushed_at": "2026-10-19T01:04:27Z",
-      "created_at": "2026-07-28T13:13:56Z"
-    },
-    {
-      "full_name": "rshade/finfocus",
-      "html_url": "https://github.com/rshade/finfocus",
-      "description": "FinOps CLI for Pulumi — projected costs, actual spend tracking, budget enforcement, and cost optimization for cloud infrastructure",
-      "stargazers_count": 10,
-      "language": "Go",
-      "pushed_at": "2026-10-19T01:03:38Z",
-      "created_at": "2025-08-12T10:33:44Z"
-    },
-    {
-      "full_name": "griffinwork40/agent-afk",
-      "html_url": "https://github.com/griffinwork40/agent-afk",
-      "description": "The coding agent you don’t have to watch. Start a task and walk away. AFK builds the feature, verifies its own work, and texts you when it’s done. You come back to a receipt of every step, every decision, and what’s waiting on you. If it’s unsure, it stops and asks instead of guessing.",
-      "stargazers_count": 61,
-      "language": "TypeScript",
-      "pushed_at": "2026-10-19T01:05:33Z",
-      "created_at": "2026-06-05T10:42:23Z"
-    },
-    {
-      "full_name": "JustVugg/colibri",
-      "html_url": "https://github.com/JustVugg/colibri",
-      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
-      "stargazers_count": 42750,
-      "language": "C",
-      "pushed_at": "2026-10-19T01:03:18Z",
-      "created_at": "2026-07-01T12:27:49Z"
-    },
-    {
       "full_name": "littlecedar/sparkrun-recipe-registry",
       "html_url": "https://github.com/littlecedar/sparkrun-recipe-registry",
       "description": "Spark Arena Recipe Registry",
       "stargazers_count": 3,
       "language": "Python",
-      "pushed_at": "2026-10-19T01:02:26Z",
+      "pushed_at": "2026-10-26T01:06:24Z",
       "created_at": "2026-08-11T03:21:49Z"
     },
     {
-      "full_name": "PerryLink/perrylink",
-      "html_url": "https://github.com/PerryLink/perrylink",
-      "description": "Independent third-party plugin family for DeepSeek Harness - not affiliated with DeepSeek",
-      "stargazers_count": 4,
-      "language": "未知",
-      "pushed_at": "2026-10-19T01:02:16Z",
-      "created_at": "2026-08-16T09:26:35Z"
-    },
-    {
-      "full_name": "Sallyn0225/eidolon-sc",
-      "html_url": "https://github.com/Sallyn0225/eidolon-sc",
-      "description": "和《偶像大师 闪耀色彩》偶像实时语音/文字对话的 AI 分身：日语原声 + 中文字幕、回忆原作剧情、跨角色共享记忆；支持 Google/GitHub 登录与自带密钥，Docker Compose 一键部署（参考 LAPLACE Eidolon）",
-      "stargazers_count": 42,
+      "full_name": "darklordVirtual/REMORA-research",
+      "html_url": "https://github.com/darklordVirtual/REMORA-research",
+      "description": "Policy-Gated Governance for Operational AI Agents",
+      "stargazers_count": 8,
       "language": "Python",
-      "pushed_at": "2026-10-19T01:04:51Z",
-      "created_at": "2026-09-25T12:59:15Z"
-    },
-    {
-      "full_name": "SuperInstance/AI-Writings",
-      "html_url": "https://github.com/SuperInstance/AI-Writings",
-      "description": "Creative writing, essays, and philosophical explorations from the Exocortex project",
-      "stargazers_count": 4,
-      "language": "HTML",
-      "pushed_at": "2026-10-19T01:01:50Z",
-      "created_at": "2026-03-08T19:04:40Z"
-    },
-    {
-      "full_name": "cc-claws/cc-code",
-      "html_url": "https://github.com/cc-claws/cc-code",
-      "description": "",
-      "stargazers_count": 6,
-      "language": "Rust",
-      "pushed_at": "2026-10-19T01:03:09Z",
-      "created_at": "2026-06-25T11:20:18Z"
-    },
-    {
-      "full_name": "Dominic789654/awesome-deepseek-harness",
-      "html_url": "https://github.com/Dominic789654/awesome-deepseek-harness",
-      "description": "A curated list of plugins, skills, MCP servers, patch/profile layers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh",
-      "stargazers_count": 386,
-      "language": "TypeScript",
-      "pushed_at": "2026-10-19T01:01:20Z",
-      "created_at": "2026-08-13T13:54:05Z"
-    },
-    {
-      "full_name": "PBJ-2/clauderipple",
-      "html_url": "https://github.com/PBJ-2/clauderipple",
-      "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too.",
-      "stargazers_count": 57,
-      "language": "TypeScript",
-      "pushed_at": "2026-10-19T01:01:01Z",
-      "created_at": "2026-09-13T11:06:55Z"
-    },
-    {
-      "full_name": "Chat2AnyLLM/awesome-claude-plugins",
-      "html_url": "https://github.com/Chat2AnyLLM/awesome-claude-plugins",
-      "description": "A curated list of awesome claude marketplaces and plugins",
-      "stargazers_count": 116,
-      "language": "Shell",
-      "pushed_at": "2026-10-19T01:00:47Z",
-      "created_at": "2025-12-23T00:47:15Z"
-    },
-    {
-      "full_name": "linny006/agent-eval-harness",
-      "html_url": "https://github.com/linny006/agent-eval-harness",
-      "description": "Live, open-source benchmark for comparing AI coding agents on real GitHub issues",
-      "stargazers_count": 6,
-      "language": "Python",
-      "pushed_at": "2026-10-19T01:00:29Z",
-      "created_at": "2026-05-24T01:08:04Z"
-    },
-    {
-      "full_name": "linny006/llmops-radar",
-      "html_url": "https://github.com/linny006/llmops-radar",
-      "description": "Live index of the newest LLMOps tooling — track what's shipping in LLM observability and deployment",
-      "stargazers_count": 3,
-      "language": "Python",
-      "pushed_at": "2026-10-19T01:00:29Z",
-      "created_at": "2026-05-23T10:53:34Z"
-    },
-    {
-      "full_name": "linny006/llm-eval-tracker",
-      "html_url": "https://github.com/linny006/llm-eval-tracker",
-      "description": "Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub",
-      "stargazers_count": 6,
-      "language": "Python",
-      "pushed_at": "2026-10-19T01:00:22Z",
-      "created_at": "2026-05-23T10:51:52Z"
-    },
-    {
-      "full_name": "linny006/trending-claude-skills",
-      "html_url": "https://github.com/linny006/trending-claude-skills",
-      "description": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes",
-      "stargazers_count": 127,
-      "language": "Python",
-      "pushed_at": "2026-10-19T01:00:14Z",
-      "created_at": "2026-05-23T10:00:25Z"
+      "pushed_at": "2026-10-26T01:06:23Z",
+      "created_at": "2026-06-25T05:11:38Z"
     },
     {
       "full_name": "walkinglabs/awesome-deepseek-harness-plugins",
       "html_url": "https://github.com/walkinglabs/awesome-deepseek-harness-plugins",
       "description": "A curated directory of source-verified DeepSeek Harness (DSH) plugins, tools, design workflows, and official resources.",
-      "stargazers_count": 47,
+      "stargazers_count": 48,
       "language": "未知",
-      "pushed_at": "2026-10-19T01:00:04Z",
+      "pushed_at": "2026-10-26T01:05:50Z",
       "created_at": "2026-08-13T14:04:31Z"
+    },
+    {
+      "full_name": "wundercorp/loki",
+      "html_url": "https://github.com/wundercorp/loki",
+      "description": "The agent that evolves with you 𖤍",
+      "stargazers_count": 26,
+      "language": "Python",
+      "pushed_at": "2026-10-26T01:05:17Z",
+      "created_at": "2026-09-11T17:31:16Z"
+    },
+    {
+      "full_name": "OpenAgentsInc/openagents",
+      "html_url": "https://github.com/OpenAgentsInc/openagents",
+      "description": "Monorepo & docs",
+      "stargazers_count": 458,
+      "language": "Rust",
+      "pushed_at": "2026-10-26T01:05:02Z",
+      "created_at": "2023-11-07T16:16:46Z"
     },
     {
       "full_name": "skyfe79/Awesome",
@@ -204,8 +51,152 @@
       "description": "My Awesome from the starred repos 😋",
       "stargazers_count": 11,
       "language": "未知",
-      "pushed_at": "2026-10-19T00:59:40Z",
+      "pushed_at": "2026-10-26T01:04:32Z",
       "created_at": "2021-08-27T18:04:04Z"
+    },
+    {
+      "full_name": "NelsonLongxiang/ygl-trees",
+      "html_url": "https://github.com/NelsonLongxiang/ygl-trees",
+      "description": "",
+      "stargazers_count": 3,
+      "language": "TypeScript",
+      "pushed_at": "2026-10-26T01:03:44Z",
+      "created_at": "2026-10-17T05:39:39Z"
+    },
+    {
+      "full_name": "wustep/my-bot-scripts",
+      "html_url": "https://github.com/wustep/my-bot-scripts",
+      "description": "Scripts and prompts behind my Grok Bot setup",
+      "stargazers_count": 30,
+      "language": "Python",
+      "pushed_at": "2026-10-26T01:02:27Z",
+      "created_at": "2026-10-17T07:08:25Z"
+    },
+    {
+      "full_name": "BaronCyrus/dsh-packycode-api",
+      "html_url": "https://github.com/BaronCyrus/dsh-packycode-api",
+      "description": "Use a PackyCode (PackyAPI) API key in DeepSeek Harness: built-in multi-protocol model route, ordered API-key rotation, and balance display",
+      "stargazers_count": 18,
+      "language": "JavaScript",
+      "pushed_at": "2026-10-26T01:03:48Z",
+      "created_at": "2026-10-12T03:55:35Z"
+    },
+    {
+      "full_name": "Sanctum-Origo-Systems/autoloop",
+      "html_url": "https://github.com/Sanctum-Origo-Systems/autoloop",
+      "description": "Config-driven AI pipeline for triaging and implementing code in the issue board",
+      "stargazers_count": 25,
+      "language": "Python",
+      "pushed_at": "2026-10-26T01:02:45Z",
+      "created_at": "2026-07-12T18:34:25Z"
+    },
+    {
+      "full_name": "griffinwork40/agent-afk",
+      "html_url": "https://github.com/griffinwork40/agent-afk",
+      "description": "The coding agent you don’t have to watch. Start a task and walk away. AFK builds the feature, verifies its own work, and texts you when it’s done. You come back to a receipt of every step, every decision, and what’s waiting on you. If it’s unsure, it stops and asks instead of guessing.",
+      "stargazers_count": 62,
+      "language": "TypeScript",
+      "pushed_at": "2026-10-26T01:06:34Z",
+      "created_at": "2026-06-05T10:42:23Z"
+    },
+    {
+      "full_name": "Dominic789654/awesome-deepseek-harness",
+      "html_url": "https://github.com/Dominic789654/awesome-deepseek-harness",
+      "description": "A curated list of plugins, skills, MCP servers, patch/profile layers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh",
+      "stargazers_count": 400,
+      "language": "TypeScript",
+      "pushed_at": "2026-10-26T01:01:49Z",
+      "created_at": "2026-08-13T13:54:05Z"
+    },
+    {
+      "full_name": "xerj-org/xerj",
+      "html_url": "https://github.com/xerj-org/xerj",
+      "description": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
+      "stargazers_count": 15571,
+      "language": "Rust",
+      "pushed_at": "2026-10-26T01:06:14Z",
+      "created_at": "2026-06-30T04:32:45Z"
+    },
+    {
+      "full_name": "LinklyAI/best-skills",
+      "html_url": "https://github.com/LinklyAI/best-skills",
+      "description": "Daily-updated Top 100 Agent Skills rankings — installs, growth, and social buzz   aggregated from skills.sh, ClawHub, Tencent SkillHub, GitHub, X and 10+ communities.   Open data (CSV). ",
+      "stargazers_count": 663,
+      "language": "未知",
+      "pushed_at": "2026-10-26T01:00:50Z",
+      "created_at": "2026-08-11T04:01:02Z"
+    },
+    {
+      "full_name": "Sanctum-Origo-Systems/patina",
+      "html_url": "https://github.com/Sanctum-Origo-Systems/patina",
+      "description": "A persistent cognitive backend with belief graph and earned graduated autonomy",
+      "stargazers_count": 8,
+      "language": "Python",
+      "pushed_at": "2026-10-26T01:00:50Z",
+      "created_at": "2026-05-25T16:07:30Z"
+    },
+    {
+      "full_name": "linny006/awesome-agent-skills",
+      "html_url": "https://github.com/linny006/awesome-agent-skills",
+      "description": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a",
+      "stargazers_count": 44,
+      "language": "Python",
+      "pushed_at": "2026-10-26T01:00:35Z",
+      "created_at": "2026-05-24T01:09:07Z"
+    },
+    {
+      "full_name": "linny006/agent-eval-harness",
+      "html_url": "https://github.com/linny006/agent-eval-harness",
+      "description": "Live, open-source benchmark for comparing AI coding agents on real GitHub issues",
+      "stargazers_count": 6,
+      "language": "Python",
+      "pushed_at": "2026-10-26T01:00:30Z",
+      "created_at": "2026-05-24T01:08:04Z"
+    },
+    {
+      "full_name": "linny006/rag-radar",
+      "html_url": "https://github.com/linny006/rag-radar",
+      "description": "Live tracker of new RAG implementations, tools, and patterns — updated every 15 minutes",
+      "stargazers_count": 3,
+      "language": "Python",
+      "pushed_at": "2026-10-26T01:00:22Z",
+      "created_at": "2026-05-23T10:51:18Z"
+    },
+    {
+      "full_name": "linny006/trending-claude-skills",
+      "html_url": "https://github.com/linny006/trending-claude-skills",
+      "description": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes",
+      "stargazers_count": 133,
+      "language": "Python",
+      "pushed_at": "2026-10-26T01:00:13Z",
+      "created_at": "2026-05-23T10:00:25Z"
+    },
+    {
+      "full_name": "tyonger-stack/GrokNode",
+      "html_url": "https://github.com/tyonger-stack/GrokNode",
+      "description": "基于公开发布的 Grok Bot 0.18.0 macOS 应用的非官方源码级重建，产出可读 TypeScript，附带 Codex 与 OpenRouter 两档推理路由、使用本地 Docker 沙箱与本地用量统计。仅限研究用途。",
+      "stargazers_count": 6,
+      "language": "TypeScript",
+      "pushed_at": "2026-10-26T00:59:51Z",
+      "created_at": "2026-09-22T07:39:06Z"
+    },
+    {
+      "full_name": "tickernelz/sub2api",
+      "html_url": "https://github.com/tickernelz/sub2api",
+      "description": "Fork of sub2api some improvements",
+      "stargazers_count": 11,
+      "language": "Go",
+      "pushed_at": "2026-10-26T00:58:50Z",
+      "created_at": "2026-05-26T00:10:40Z"
+    },
+    {
+      "full_name": "cs68614-hash/awesome-grokbot-templates",
+      "html_url": "https://github.com/cs68614-hash/awesome-grokbot-templates",
+      "description": "A curated list of community Grok Bot templates with official x.ai share links. Directory: grokbot-templates.com",
+      "stargazers_count": 6,
+      "language": "Python",
+      "pushed_at": "2026-10-26T00:58:36Z",
+      "created_at": "2026-08-29T13:15:58Z"
     },
     {
       "full_name": "paul010/dalei-youtube",
@@ -213,63 +204,27 @@
       "description": "大雷早上好 | AI 实践派 — YouTube 频道资源库，每期视频的提示词、工具链接与深度笔记",
       "stargazers_count": 6,
       "language": "Python",
-      "pushed_at": "2026-10-19T00:59:21Z",
+      "pushed_at": "2026-10-26T00:57:39Z",
       "created_at": "2026-03-15T04:27:10Z"
     },
     {
-      "full_name": "LinklyAI/best-skills",
-      "html_url": "https://github.com/LinklyAI/best-skills",
-      "description": "Daily-updated Top 100 Agent Skills rankings — installs, growth, and social buzz   aggregated from skills.sh, ClawHub, Tencent SkillHub, GitHub, X and 10+ communities.   Open data (CSV). ",
-      "stargazers_count": 649,
-      "language": "未知",
-      "pushed_at": "2026-10-19T00:57:54Z",
-      "created_at": "2026-08-11T04:01:02Z"
-    },
-    {
-      "full_name": "OpenAgentsInc/openagents",
-      "html_url": "https://github.com/OpenAgentsInc/openagents",
-      "description": "Monorepo & docs",
-      "stargazers_count": 457,
+      "full_name": "cc-claws/cc-code",
+      "html_url": "https://github.com/cc-claws/cc-code",
+      "description": "",
+      "stargazers_count": 6,
       "language": "Rust",
-      "pushed_at": "2026-10-19T01:04:15Z",
-      "created_at": "2023-11-07T16:16:46Z"
+      "pushed_at": "2026-10-26T00:56:31Z",
+      "created_at": "2026-06-25T11:20:18Z"
     },
     {
-      "full_name": "xerj-org/xerj",
-      "html_url": "https://github.com/xerj-org/xerj",
-      "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep (1974 tool). One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. It’s durable and can replace ElasticSearch saving you x10 infra costs.",
-      "stargazers_count": 8430,
-      "language": "Rust",
-      "pushed_at": "2026-10-19T00:57:45Z",
-      "created_at": "2026-06-30T04:32:45Z"
-    },
-    {
-      "full_name": "trevorotts1/openclaw-onboarding",
-      "html_url": "https://github.com/trevorotts1/openclaw-onboarding",
-      "description": "Complete 14-skill onboarding package for OpenClaw AI assistants. Download the ZIP, share Start Here.md with your AI, and it handles the rest.",
-      "stargazers_count": 3,
-      "language": "Python",
-      "pushed_at": "2026-10-19T00:57:14Z",
-      "created_at": "2026-03-01T23:35:02Z"
-    },
-    {
-      "full_name": "chalettu/awesome-ai-engineering",
-      "html_url": "https://github.com/chalettu/awesome-ai-engineering",
-      "description": "This is a repo that shares a lot of the great links I have collected on how to approach engineering software using AI tools",
-      "stargazers_count": 3,
-      "language": "未知",
-      "pushed_at": "2026-10-19T00:56:29Z",
-      "created_at": "2026-07-27T21:58:31Z"
-    },
-    {
-      "full_name": "lukemcqueen/hermes-cortex",
-      "html_url": "https://github.com/lukemcqueen/hermes-cortex",
-      "description": "Config, skills, memory, and observability layer for my personal AI agent. Persistent knowledge base, ClawMetry dashboard, and self-improving workflow system.",
-      "stargazers_count": 4,
-      "language": "Python",
-      "pushed_at": "2026-10-19T00:56:14Z",
-      "created_at": "2026-06-03T06:01:57Z"
+      "full_name": "wingedsheep/argentum-engine",
+      "html_url": "https://github.com/wingedsheep/argentum-engine",
+      "description": "Magic: The Gathering rules engine + online play platform, in Kotlin",
+      "stargazers_count": 77,
+      "language": "Kotlin",
+      "pushed_at": "2026-10-26T00:56:30Z",
+      "created_at": "2026-01-18T16:00:36Z"
     }
   ],
-  "updated_at": "2026-10-19"
+  "updated_at": "2026-10-26"
 }
