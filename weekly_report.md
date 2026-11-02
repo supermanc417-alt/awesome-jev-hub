@@ -1,4 +1,4 @@
-# Jev Hub 周更新报告 · 2026-10-26
+# Jev Hub 周更新报告 · 2026-11-02
 
 ## 收录数据刷新
 - 刷新项目数: 69
@@ -6,29 +6,27 @@
 
 
 ## 本周新入选（高置信，已收录）
-- 数量: 5
+- 数量: 3
 
-  - adventists-ai/duplexjev *(⭐ 35)* — DuplexJev-32B and DuplexJev-4B: speech decision models for full-duplex voice agents. Typed single-token readout from a frozen speech LLM, served with vLLM. Try it: api.adventists.cn/duplexjev
-  - MiaoWuNYA/rikkahub-sillytavern-android *(⭐ 137)* — 安卓AI聊天端:开箱即聊，无损导入酒馆卡，缓存强省用量，Jev 决策，专属RP模式，防空回，主动信息，前端卡支持，高定制主题，QQbot，AI群聊，插件系统，强兼容中转站。手机移动端原生支持，求 Star 收藏⭐Android AI Chatbox: lossless SillyTavern card import, aggressive cache optimization, Jev decisions, multi-dimensional memory, anti-blank-reply, proactive messages, AI group chat, SillyTavern themes, plugin system, Native mobile.RikkaHub
-  - frankxai/Starlight-Intelligence-System *(⭐ 11)* — One shared brain for your whole AI fleet: attested memory, orchestration, governance and evals across Claude Code, Codex, Cursor, Gemini, Antigravity.
-  - Sheltercosmo/jev4pg *(⭐ 258)* — Established strong JEV based natural language to SQL performance and well-covered semantic operators for PostgreSQL(PG) with optimized cost and latency. Reusable evidence, with native execution, parallel plans and explainable embeddings in development preview.
-  - DevMortimer/pi-warden *(⭐ 175)* — Guardrails for Pi that steer instead of interrupt: enforces your project rules on every write, holds only hard-to-undo actions (3 per 1,000 calls, measured on real sessions), catches unverified "done" claims and stuck loops, and trims tool output. Built on pi-typesafe.
+  - daftAI2026/awesome-jev *(⭐ 14)* — Curated TypeSafe Jev / System One GitHub projects, open-source alternatives, and Jev news
+  - wh000wh000/awesome-jev-live *(⭐ 378)* — Awesome Jev — evidence-graded index of TypeSafe System One: SDKs, MCP tools, agents, apps and open models. 20 languages, rebuilt every 2 hours.
+  - yzfly/awesome-jev-zh *(⭐ 89)* — Jev / TypeSafe System One 中文精选列表：官方资料、SDK、爆款应用、Agent 工具、开源复现与独立评测，附中文上手指南，每日自动收录 GitHub 热门项目。
 
 ## 待审候选（低置信，未收录）
-- 数量: 25
+- 数量: 19
 
-  - littlecedar/sparkrun-recipe-registry *(⭐ 3)* — Spark Arena Recipe Registry
-  - darklordVirtual/REMORA-research *(⭐ 8)* — Policy-Gated Governance for Operational AI Agents
-  - walkinglabs/awesome-deepseek-harness-plugins *(⭐ 48)* — A curated directory of source-verified DeepSeek Harness (DSH) plugins, tools, design workflows, and official resources.
-  - wundercorp/loki *(⭐ 26)* — The agent that evolves with you 𖤍
-  - OpenAgentsInc/openagents *(⭐ 458)* — Monorepo & docs
-  - skyfe79/Awesome *(⭐ 11)* — My Awesome from the starred repos 😋
-  - NelsonLongxiang/ygl-trees *(⭐ 3)* — 
-  - wustep/my-bot-scripts *(⭐ 30)* — Scripts and prompts behind my Grok Bot setup
-  - BaronCyrus/dsh-packycode-api *(⭐ 18)* — Use a PackyCode (PackyAPI) API key in DeepSeek Harness: built-in multi-protocol model route, ordered API-key rotation, and balance display
-  - Sanctum-Origo-Systems/autoloop *(⭐ 25)* — Config-driven AI pipeline for triaging and implementing code in the issue board
-  - griffinwork40/agent-afk *(⭐ 62)* — The coding agent you don’t have to watch. Start a task and walk away. AFK builds the feature, verifies its own work, and texts you when it’s done. You come back to a receipt of every step, every decision, and what’s waiting on you. If it’s unsure, it stops and asks instead of guessing.
-  - Dominic789654/awesome-deepseek-harness *(⭐ 400)* — A curated list of plugins, skills, MCP servers, patch/profile layers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh
-  - xerj-org/xerj *(⭐ 15,571)* — Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.
-  - LinklyAI/best-skills *(⭐ 663)* — Daily-updated Top 100 Agent Skills rankings — installs, growth, and social buzz   aggregated from skills.sh, ClawHub, Tencent SkillHub, GitHub, X and 10+ communities.   Open data (CSV). 
-  - Sanctum-Origo-Systems/patina *(⭐ 8)* — A persistent cognitive backend with belief graph and earned graduated autonomy
+  - RueClaw/public-data *(⭐ 11)* — Curated GenAI patterns, prompts, and agent architectures extracted from open-source projects
+  - wingedsheep/argentum-engine *(⭐ 82)* — Magic: The Gathering rules engine + online play platform, in Kotlin
+  - Sidiora-Labs/hyperfide *(⭐ 639)* — The ai agent workflow tool that scales from small, simple projects to large, complex codebases.
+  - rshade/finfocus *(⭐ 11)* — FinOps CLI for Pulumi — projected costs, actual spend tracking, budget enforcement, and cost optimization for cloud infrastructure
+  - rorz/rorz.io *(⭐ 6)* — My personal website.
+  - kamp-us/demlik *(⭐ 7)* — TEA-faithful state machine substrate for TypeScript — one pure reducer, every host adapter. The @demlik/tea package.
+  - being1943/my_rss_reader *(⭐ 10)* — Rss每日更新推送到邮箱
+  - satmihir/re-agent *(⭐ 6)* — Building an AI agent from first principles
+  - larspohlmann/simple-feed-reader *(⭐ 6)* — Self-hosted multi-user RSS/Atom reader with a Symfony JSON API and an Angular SPA. Full-text article extraction, email digests, OPML import/export, saved searches, and ai powered recommendations. Bluesky and Mastodon integration. One-line Docker install.
+  - risense-ai/respire-cli *(⭐ 6)* — Respire CLI with local storage and background synchronization
+  - RMRdeveloper/sideroom-pi *(⭐ 4)* — Pi package that asks clarifying questions, keeps a live todo board, enforces coding guidelines before every edit, and won't call it done while your checks are red.
+  - Torutesu/HonmaruAI *(⭐ 3)* — TIktok for work
+  - higress-group/HiRoute *(⭐ 369)* — Make Codex and Claude Code subscriptions go further: a local model router that gives routine agent work to economical models and keeps your strongest model for the hard parts.
+  - gpillon/ignis *(⭐ 50)* — OpenAI-compatible inference server for Qwen3.8 on one RTX 5090 / RTX PRO 6000: the 27B at ~170 tok/s (peaks ~370), Flash-Next (125B MoE) at ~100 tok/s, built for local coding agents. Rust + CUDA, Windows and Linux.
+  - game-life04/weekly-tech-agent *(⭐ 3)* — 每周科技收集 Agent：每天自动收集 AI / 大模型领域的动态、开源项目和论文，生成日报和周报
