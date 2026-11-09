@@ -1,31 +1,49 @@
 {
   "review": [
     {
-      "full_name": "RueClaw/public-data",
-      "html_url": "https://github.com/RueClaw/public-data",
-      "description": "Curated GenAI patterns, prompts, and agent architectures extracted from open-source projects",
-      "stargazers_count": 11,
-      "language": "HTML",
-      "pushed_at": "2026-11-02T01:13:13Z",
-      "created_at": "2026-02-10T04:23:45Z"
+      "full_name": "marcusquinn/aidevops",
+      "html_url": "https://github.com/marcusquinn/aidevops",
+      "description": "Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI & API stack for speed, security, and 24/7 results. Open-source first. SOTA everything. The best AI harness for GitHub & teamwork.",
+      "stargazers_count": 441,
+      "language": "Shell",
+      "pushed_at": "2026-11-09T01:05:03Z",
+      "created_at": "2025-11-09T05:15:11Z"
     },
     {
-      "full_name": "wingedsheep/argentum-engine",
-      "html_url": "https://github.com/wingedsheep/argentum-engine",
-      "description": "Magic: The Gathering rules engine + online play platform, in Kotlin",
-      "stargazers_count": 82,
-      "language": "Kotlin",
-      "pushed_at": "2026-11-02T01:13:12Z",
-      "created_at": "2026-01-18T16:00:36Z"
+      "full_name": "rudycelekli/rudycelekli",
+      "html_url": "https://github.com/rudycelekli/rudycelekli",
+      "description": "Profile: proof-driven AI systems, evaluation, and agent reliability",
+      "stargazers_count": 5,
+      "language": "Python",
+      "pushed_at": "2026-11-09T01:04:58Z",
+      "created_at": "2026-09-27T01:56:05Z"
     },
     {
-      "full_name": "Sidiora-Labs/hyperfide",
-      "html_url": "https://github.com/Sidiora-Labs/hyperfide",
-      "description": "The ai agent workflow tool that scales from small, simple projects to large, complex codebases.",
-      "stargazers_count": 639,
+      "full_name": "alpoxdev/hypercore",
+      "html_url": "https://github.com/alpoxdev/hypercore",
+      "description": "",
+      "stargazers_count": 5,
+      "language": "Shell",
+      "pushed_at": "2026-11-09T01:04:19Z",
+      "created_at": "2025-11-30T01:04:30Z"
+    },
+    {
+      "full_name": "reacher-z/Awesome-REA",
+      "html_url": "https://github.com/reacher-z/Awesome-REA",
+      "description": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
+      "stargazers_count": 2117,
+      "language": "Python",
+      "pushed_at": "2026-11-09T01:05:02Z",
+      "created_at": "2026-10-16T00:42:04Z"
+    },
+    {
+      "full_name": "lidge-jun/opencodex",
+      "html_url": "https://github.com/lidge-jun/opencodex",
+      "description": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "stargazers_count": 18302,
       "language": "TypeScript",
-      "pushed_at": "2026-11-02T01:12:29Z",
-      "created_at": "2026-08-13T07:38:47Z"
+      "pushed_at": "2026-11-09T01:04:13Z",
+      "created_at": "2026-06-18T23:03:18Z"
     },
     {
       "full_name": "rshade/finfocus",
@@ -33,116 +51,35 @@
       "description": "FinOps CLI for Pulumi — projected costs, actual spend tracking, budget enforcement, and cost optimization for cloud infrastructure",
       "stargazers_count": 11,
       "language": "Go",
-      "pushed_at": "2026-11-02T01:11:45Z",
+      "pushed_at": "2026-11-09T01:04:54Z",
       "created_at": "2025-08-12T10:33:44Z"
     },
     {
-      "full_name": "rorz/rorz.io",
-      "html_url": "https://github.com/rorz/rorz.io",
-      "description": "My personal website.",
-      "stargazers_count": 6,
+      "full_name": "LinklyAI/best-skills",
+      "html_url": "https://github.com/LinklyAI/best-skills",
+      "description": "Daily-updated Top 100 Agent Skills rankings — installs, growth, and social buzz   aggregated from skills.sh, ClawHub, Tencent SkillHub, GitHub, X and 10+ communities.   Open data (CSV). ",
+      "stargazers_count": 752,
+      "language": "未知",
+      "pushed_at": "2026-11-09T01:00:50Z",
+      "created_at": "2026-08-11T04:01:02Z"
+    },
+    {
+      "full_name": "pollinations/pollinations",
+      "html_url": "https://github.com/pollinations/pollinations",
+      "description": "Your Friendly Open-Source Gen-AI Platform",
+      "stargazers_count": 5279,
       "language": "TypeScript",
-      "pushed_at": "2026-11-02T01:10:57Z",
-      "created_at": "2026-07-10T09:12:34Z"
+      "pushed_at": "2026-11-09T01:04:52Z",
+      "created_at": "2021-04-15T10:57:14Z"
     },
     {
-      "full_name": "kamp-us/demlik",
-      "html_url": "https://github.com/kamp-us/demlik",
-      "description": "TEA-faithful state machine substrate for TypeScript — one pure reducer, every host adapter. The @demlik/tea package.",
-      "stargazers_count": 7,
-      "language": "TypeScript",
-      "pushed_at": "2026-11-02T01:10:20Z",
-      "created_at": "2026-08-16T01:02:16Z"
-    },
-    {
-      "full_name": "being1943/my_rss_reader",
-      "html_url": "https://github.com/being1943/my_rss_reader",
-      "description": "Rss每日更新推送到邮箱",
-      "stargazers_count": 10,
-      "language": "Python",
-      "pushed_at": "2026-11-02T01:10:10Z",
-      "created_at": "2022-09-14T06:47:14Z"
-    },
-    {
-      "full_name": "satmihir/re-agent",
-      "html_url": "https://github.com/satmihir/re-agent",
-      "description": "Building an AI agent from first principles",
-      "stargazers_count": 6,
-      "language": "Python",
-      "pushed_at": "2026-11-02T01:09:37Z",
-      "created_at": "2026-09-05T04:56:23Z"
-    },
-    {
-      "full_name": "larspohlmann/simple-feed-reader",
-      "html_url": "https://github.com/larspohlmann/simple-feed-reader",
-      "description": "Self-hosted multi-user RSS/Atom reader with a Symfony JSON API and an Angular SPA. Full-text article extraction, email digests, OPML import/export, saved searches, and ai powered recommendations. Bluesky and Mastodon integration. One-line Docker install.",
-      "stargazers_count": 6,
-      "language": "PHP",
-      "pushed_at": "2026-11-02T01:09:22Z",
-      "created_at": "2026-07-21T06:46:37Z"
-    },
-    {
-      "full_name": "risense-ai/respire-cli",
-      "html_url": "https://github.com/risense-ai/respire-cli",
-      "description": "Respire CLI with local storage and background synchronization",
-      "stargazers_count": 6,
-      "language": "Rust",
-      "pushed_at": "2026-11-02T01:07:39Z",
-      "created_at": "2026-10-02T13:52:16Z"
-    },
-    {
-      "full_name": "RMRdeveloper/sideroom-pi",
-      "html_url": "https://github.com/RMRdeveloper/sideroom-pi",
-      "description": "Pi package that asks clarifying questions, keeps a live todo board, enforces coding guidelines before every edit, and won't call it done while your checks are red.",
-      "stargazers_count": 4,
-      "language": "TypeScript",
-      "pushed_at": "2026-11-02T01:11:59Z",
-      "created_at": "2026-08-06T23:50:51Z"
-    },
-    {
-      "full_name": "Torutesu/HonmaruAI",
-      "html_url": "https://github.com/Torutesu/HonmaruAI",
-      "description": "TIktok for work",
-      "stargazers_count": 3,
-      "language": "JavaScript",
-      "pushed_at": "2026-11-02T01:11:31Z",
-      "created_at": "2026-07-27T12:19:21Z"
-    },
-    {
-      "full_name": "higress-group/HiRoute",
-      "html_url": "https://github.com/higress-group/HiRoute",
-      "description": "Make Codex and Claude Code subscriptions go further: a local model router that gives routine agent work to economical models and keeps your strongest model for the hard parts.",
-      "stargazers_count": 369,
-      "language": "Rust",
-      "pushed_at": "2026-11-02T01:06:51Z",
-      "created_at": "2026-09-12T03:28:58Z"
-    },
-    {
-      "full_name": "gpillon/ignis",
-      "html_url": "https://github.com/gpillon/ignis",
-      "description": "OpenAI-compatible inference server for Qwen3.8 on one RTX 5090 / RTX PRO 6000: the 27B at ~170 tok/s (peaks ~370), Flash-Next (125B MoE) at ~100 tok/s, built for local coding agents. Rust + CUDA, Windows and Linux.",
-      "stargazers_count": 50,
-      "language": "Rust",
-      "pushed_at": "2026-11-02T01:06:36Z",
-      "created_at": "2026-09-01T23:59:49Z"
-    },
-    {
-      "full_name": "game-life04/weekly-tech-agent",
-      "html_url": "https://github.com/game-life04/weekly-tech-agent",
-      "description": "每周科技收集 Agent：每天自动收集 AI / 大模型领域的动态、开源项目和论文，生成日报和周报",
-      "stargazers_count": 3,
-      "language": "Python",
-      "pushed_at": "2026-11-02T01:06:29Z",
-      "created_at": "2026-10-12T01:43:24Z"
-    },
-    {
-      "full_name": "ashlrai/phantom",
-      "html_url": "https://github.com/ashlrai/phantom",
-      "description": "Phantom by AshlrAI: an open-source engineering agent workbench for Claude Code, Codex, Devin, Grok and local models. Connect your resources, work with agents, or run an autonomous fleet.",
-      "stargazers_count": 5,
-      "language": "TypeScript",
-      "pushed_at": "2026-11-02T01:06:19Z",
-      "created_at": "2026-06-09T03:17:27Z"
+      "full_name": "JustVugg/colibri",
+      "html_url": "https://github.com/JustVugg/colibri",
+      "description": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
+      "stargazers_count": 49097,
+      "language": "C",
+      "pushed_at": "2026-11-09T00:59:59Z",
+      "created_at": "2026-07-01T12:27:49Z"
     },
     {
       "full_name": "paul010/dalei-youtube",
@@ -150,27 +87,108 @@
       "description": "大雷早上好 | AI 实践派 — YouTube 频道资源库，每期视频的提示词、工具链接与深度笔记",
       "stargazers_count": 6,
       "language": "Python",
-      "pushed_at": "2026-11-02T01:03:58Z",
+      "pushed_at": "2026-11-09T00:59:26Z",
       "created_at": "2026-03-15T04:27:10Z"
     },
     {
-      "full_name": "kriscendobot/garden",
-      "html_url": "https://github.com/kriscendobot/garden",
-      "description": "Like a garden, you reap what you sow, but mostly pull weeds.",
-      "stargazers_count": 3,
-      "language": "Shell",
-      "pushed_at": "2026-11-02T01:12:51Z",
-      "created_at": "2026-05-12T20:34:33Z"
+      "full_name": "matrixorigin/Astra",
+      "html_url": "https://github.com/matrixorigin/Astra",
+      "description": "Astra — The context-to-execution runtime for enterprise agents. https://matrixorigin.io/astra",
+      "stargazers_count": 36,
+      "language": "Rust",
+      "pushed_at": "2026-11-09T00:59:14Z",
+      "created_at": "2026-02-09T04:21:45Z"
     },
     {
-      "full_name": "Yeachan-Heo/oh-my-claudecode",
-      "html_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-      "description": "Teams-first Multi-agent orchestration for Claude Code",
-      "stargazers_count": 40496,
+      "full_name": "littlecedar/sparkrun-recipe-registry",
+      "html_url": "https://github.com/littlecedar/sparkrun-recipe-registry",
+      "description": "Spark Arena Recipe Registry",
+      "stargazers_count": 4,
+      "language": "Python",
+      "pushed_at": "2026-11-09T00:58:45Z",
+      "created_at": "2026-08-11T03:21:49Z"
+    },
+    {
+      "full_name": "scottmreed/professor-wiggum",
+      "html_url": "https://github.com/scottmreed/professor-wiggum",
+      "description": "",
+      "stargazers_count": 5,
+      "language": "Python",
+      "pushed_at": "2026-11-09T00:58:36Z",
+      "created_at": "2026-03-06T17:28:20Z"
+    },
+    {
+      "full_name": "agentconnect-md/agentconnect",
+      "html_url": "https://github.com/agentconnect-md/agentconnect",
+      "description": "The open-source, multi-agent alternative to Claude Tag.  @ any agent, wherever work happens, they work alongside your team, learning as they go.",
+      "stargazers_count": 1522,
       "language": "TypeScript",
-      "pushed_at": "2026-11-02T01:03:04Z",
-      "created_at": "2026-01-09T03:36:29Z"
+      "pushed_at": "2026-11-09T00:58:34Z",
+      "created_at": "2026-07-24T02:17:34Z"
+    },
+    {
+      "full_name": "OpenRouterTeam/docs",
+      "html_url": "https://github.com/OpenRouterTeam/docs",
+      "description": "",
+      "stargazers_count": 13,
+      "language": "MDX",
+      "pushed_at": "2026-11-09T00:56:55Z",
+      "created_at": "2026-03-26T15:49:04Z"
+    },
+    {
+      "full_name": "ksenxx/kiss_ai",
+      "html_url": "https://github.com/ksenxx/kiss_ai",
+      "description": "KISS Sorcar: Keep it Simple, Stupid AI General Purpose Agent Framework for Long Horizon Tasks and AI Discovery",
+      "stargazers_count": 562,
+      "language": "Python",
+      "pushed_at": "2026-11-09T00:56:47Z",
+      "created_at": "2026-01-09T00:49:18Z"
+    },
+    {
+      "full_name": "ruvnet/RuVector",
+      "html_url": "https://github.com/ruvnet/RuVector",
+      "description": "RuVector provides High Performance, Real-Time decisions and agent memory , Self-Learning Ai, Vector GNN DB built in Rust.",
+      "stargazers_count": 4675,
+      "language": "Rust",
+      "pushed_at": "2026-11-09T00:56:27Z",
+      "created_at": "2025-11-19T06:10:23Z"
+    },
+    {
+      "full_name": "gim47656-ship-it/CUELO",
+      "html_url": "https://github.com/gim47656-ship-it/CUELO",
+      "description": "CUELO — open-source AI coding agent workspace and harness for omp (oh-my-pi). Multi-agent orchestration, model routing, sessions, skills and worktrees.",
+      "stargazers_count": 4,
+      "language": "TypeScript",
+      "pushed_at": "2026-11-09T01:00:27Z",
+      "created_at": "2026-09-25T07:03:25Z"
+    },
+    {
+      "full_name": "itsbrex/my-awesome-stars",
+      "html_url": "https://github.com/itsbrex/my-awesome-stars",
+      "description": "A curated list of my GitHub stars!",
+      "stargazers_count": 19,
+      "language": "未知",
+      "pushed_at": "2026-11-09T00:52:45Z",
+      "created_at": "2022-12-02T07:40:51Z"
+    },
+    {
+      "full_name": "kristopolous/dyva",
+      "html_url": "https://github.com/kristopolous/dyva",
+      "description": "Dyva is an AI router for the untame wild web",
+      "stargazers_count": 32,
+      "language": "Python",
+      "pushed_at": "2026-11-09T00:52:28Z",
+      "created_at": "2026-02-10T07:39:32Z"
+    },
+    {
+      "full_name": "Parcha-ai/agentrun",
+      "html_url": "https://github.com/Parcha-ai/agentrun",
+      "description": "The Agentrun Workflow DSL",
+      "stargazers_count": 434,
+      "language": "JavaScript",
+      "pushed_at": "2026-11-09T01:05:23Z",
+      "created_at": "2026-09-23T00:27:34Z"
     }
   ],
-  "updated_at": "2026-11-02"
+  "updated_at": "2026-11-09"
 }
